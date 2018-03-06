@@ -7,21 +7,56 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		EC041E0120472D2F00FB14F8 /* AddNewCollectionViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = EC041E0020472D2F00FB14F8 /* AddNewCollectionViewController.swift */; };
 		EC07231D2047092400D119EC /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = EC07231C2047092400D119EC /* AppDelegate.swift */; };
-		EC07231F2047092400D119EC /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = EC07231E2047092400D119EC /* ViewController.swift */; };
+		EC07231F2047092400D119EC /* TasksViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = EC07231E2047092400D119EC /* TasksViewController.swift */; };
 		EC0723222047092400D119EC /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = EC0723202047092400D119EC /* Main.storyboard */; };
 		EC0723242047092400D119EC /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = EC0723232047092400D119EC /* Assets.xcassets */; };
 		EC0723272047092400D119EC /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = EC0723252047092400D119EC /* LaunchScreen.storyboard */; };
+		EC763AA020476CB100E4CAF9 /* TaskCollectionViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = EC763A9F20476CB100E4CAF9 /* TaskCollectionViewCell.swift */; };
+		ECB4CDCE20473C6C00E7673A /* Apalu.ttf in Resources */ = {isa = PBXBuildFile; fileRef = ECB4CDCD20473C6C00E7673A /* Apalu.ttf */; };
+		ECBC6243204710C60061CCB5 /* YoshikoTextField.swift in Sources */ = {isa = PBXBuildFile; fileRef = ECBC6237204710C60061CCB5 /* YoshikoTextField.swift */; };
+		ECBC6244204710C60061CCB5 /* HoshiTextField.swift in Sources */ = {isa = PBXBuildFile; fileRef = ECBC6239204710C60061CCB5 /* HoshiTextField.swift */; };
+		ECBC6245204710C60061CCB5 /* MinoruTextField.swift in Sources */ = {isa = PBXBuildFile; fileRef = ECBC623A204710C60061CCB5 /* MinoruTextField.swift */; };
+		ECBC6246204710C60061CCB5 /* YokoTextField.swift in Sources */ = {isa = PBXBuildFile; fileRef = ECBC623B204710C60061CCB5 /* YokoTextField.swift */; };
+		ECBC6247204710C60061CCB5 /* TextFieldEffects.swift in Sources */ = {isa = PBXBuildFile; fileRef = ECBC623C204710C60061CCB5 /* TextFieldEffects.swift */; };
+		ECBC6248204710C60061CCB5 /* JiroTextField.swift in Sources */ = {isa = PBXBuildFile; fileRef = ECBC623D204710C60061CCB5 /* JiroTextField.swift */; };
+		ECBC6249204710C60061CCB5 /* MadokaTextField.swift in Sources */ = {isa = PBXBuildFile; fileRef = ECBC623E204710C60061CCB5 /* MadokaTextField.swift */; };
+		ECBC624A204710C60061CCB5 /* KaedeTextField.swift in Sources */ = {isa = PBXBuildFile; fileRef = ECBC623F204710C60061CCB5 /* KaedeTextField.swift */; };
+		ECBC624B204710C60061CCB5 /* AkiraTextField.swift in Sources */ = {isa = PBXBuildFile; fileRef = ECBC6240204710C60061CCB5 /* AkiraTextField.swift */; };
+		ECBC624C204710C60061CCB5 /* IsaoTextField.swift in Sources */ = {isa = PBXBuildFile; fileRef = ECBC6241204710C60061CCB5 /* IsaoTextField.swift */; };
+		ECBC624D204710C60061CCB5 /* Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = ECBC6242204710C60061CCB5 /* Info.plist */; };
+		ECF88AB5204F289E0084E3CC /* TaskItemsTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = ECF88AB4204F289E0084E3CC /* TaskItemsTableViewController.swift */; };
+		F98C241C0A01AF4EE11E3352 /* Pods_iwannado.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 5DEB6686CEC76661EE96EFE3 /* Pods_iwannado.framework */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		3D2EC1A0786DE3B1F0D66EB3 /* Pods-iwannado.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-iwannado.release.xcconfig"; path = "Pods/Target Support Files/Pods-iwannado/Pods-iwannado.release.xcconfig"; sourceTree = "<group>"; };
+		5DEB6686CEC76661EE96EFE3 /* Pods_iwannado.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_iwannado.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		929C6B5CA5438127EDBC917F /* Pods-iwannado.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-iwannado.debug.xcconfig"; path = "Pods/Target Support Files/Pods-iwannado/Pods-iwannado.debug.xcconfig"; sourceTree = "<group>"; };
+		EC041E0020472D2F00FB14F8 /* AddNewCollectionViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AddNewCollectionViewController.swift; sourceTree = "<group>"; };
 		EC0723192047092400D119EC /* iwannado.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = iwannado.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		EC07231C2047092400D119EC /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
-		EC07231E2047092400D119EC /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
+		EC07231E2047092400D119EC /* TasksViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TasksViewController.swift; sourceTree = "<group>"; };
 		EC0723212047092400D119EC /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		EC0723232047092400D119EC /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		EC0723262047092400D119EC /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		EC0723282047092400D119EC /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		EC763A9F20476CB100E4CAF9 /* TaskCollectionViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TaskCollectionViewCell.swift; sourceTree = "<group>"; };
+		ECB4CDCD20473C6C00E7673A /* Apalu.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = Apalu.ttf; sourceTree = "<group>"; };
+		ECBC6237204710C60061CCB5 /* YoshikoTextField.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = YoshikoTextField.swift; sourceTree = "<group>"; };
+		ECBC6238204710C60061CCB5 /* TextFieldEffects.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = TextFieldEffects.h; sourceTree = "<group>"; };
+		ECBC6239204710C60061CCB5 /* HoshiTextField.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = HoshiTextField.swift; sourceTree = "<group>"; };
+		ECBC623A204710C60061CCB5 /* MinoruTextField.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MinoruTextField.swift; sourceTree = "<group>"; };
+		ECBC623B204710C60061CCB5 /* YokoTextField.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = YokoTextField.swift; sourceTree = "<group>"; };
+		ECBC623C204710C60061CCB5 /* TextFieldEffects.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = TextFieldEffects.swift; sourceTree = "<group>"; };
+		ECBC623D204710C60061CCB5 /* JiroTextField.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = JiroTextField.swift; sourceTree = "<group>"; };
+		ECBC623E204710C60061CCB5 /* MadokaTextField.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MadokaTextField.swift; sourceTree = "<group>"; };
+		ECBC623F204710C60061CCB5 /* KaedeTextField.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = KaedeTextField.swift; sourceTree = "<group>"; };
+		ECBC6240204710C60061CCB5 /* AkiraTextField.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = AkiraTextField.swift; sourceTree = "<group>"; };
+		ECBC6241204710C60061CCB5 /* IsaoTextField.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = IsaoTextField.swift; sourceTree = "<group>"; };
+		ECBC6242204710C60061CCB5 /* Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		ECF88AB4204F289E0084E3CC /* TaskItemsTableViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TaskItemsTableViewController.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -29,17 +64,45 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				F98C241C0A01AF4EE11E3352 /* Pods_iwannado.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		7C4A5B7CCD83769913E6A79C /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				5DEB6686CEC76661EE96EFE3 /* Pods_iwannado.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		BE62C2143D08E1BD53BF703A /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				929C6B5CA5438127EDBC917F /* Pods-iwannado.debug.xcconfig */,
+				3D2EC1A0786DE3B1F0D66EB3 /* Pods-iwannado.release.xcconfig */,
+			);
+			name = Pods;
+			sourceTree = "<group>";
+		};
+		EC041E0220473C1300FB14F8 /* Fonts */ = {
+			isa = PBXGroup;
+			children = (
+				ECB4CDCD20473C6C00E7673A /* Apalu.ttf */,
+			);
+			path = Fonts;
+			sourceTree = "<group>";
+		};
 		EC0723102047092400D119EC = {
 			isa = PBXGroup;
 			children = (
 				EC07231B2047092400D119EC /* iwannado */,
 				EC07231A2047092400D119EC /* Products */,
+				BE62C2143D08E1BD53BF703A /* Pods */,
+				7C4A5B7CCD83769913E6A79C /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -54,14 +117,62 @@
 		EC07231B2047092400D119EC /* iwannado */ = {
 			isa = PBXGroup;
 			children = (
+				ECF88AB8204F2A8F0084E3CC /* Controller */,
+				ECF88AB7204F2A8A0084E3CC /* View */,
+				ECF88AB6204F2A7E0084E3CC /* Model */,
+				EC041E0220473C1300FB14F8 /* Fonts */,
+				ECBC6236204710C60061CCB5 /* TextFieldEffects */,
 				EC07231C2047092400D119EC /* AppDelegate.swift */,
-				EC07231E2047092400D119EC /* ViewController.swift */,
-				EC0723202047092400D119EC /* Main.storyboard */,
 				EC0723232047092400D119EC /* Assets.xcassets */,
-				EC0723252047092400D119EC /* LaunchScreen.storyboard */,
 				EC0723282047092400D119EC /* Info.plist */,
 			);
 			path = iwannado;
+			sourceTree = "<group>";
+		};
+		ECBC6236204710C60061CCB5 /* TextFieldEffects */ = {
+			isa = PBXGroup;
+			children = (
+				ECBC6237204710C60061CCB5 /* YoshikoTextField.swift */,
+				ECBC6238204710C60061CCB5 /* TextFieldEffects.h */,
+				ECBC6239204710C60061CCB5 /* HoshiTextField.swift */,
+				ECBC623A204710C60061CCB5 /* MinoruTextField.swift */,
+				ECBC623B204710C60061CCB5 /* YokoTextField.swift */,
+				ECBC623C204710C60061CCB5 /* TextFieldEffects.swift */,
+				ECBC623D204710C60061CCB5 /* JiroTextField.swift */,
+				ECBC623E204710C60061CCB5 /* MadokaTextField.swift */,
+				ECBC623F204710C60061CCB5 /* KaedeTextField.swift */,
+				ECBC6240204710C60061CCB5 /* AkiraTextField.swift */,
+				ECBC6241204710C60061CCB5 /* IsaoTextField.swift */,
+				ECBC6242204710C60061CCB5 /* Info.plist */,
+			);
+			path = TextFieldEffects;
+			sourceTree = "<group>";
+		};
+		ECF88AB6204F2A7E0084E3CC /* Model */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Model;
+			sourceTree = "<group>";
+		};
+		ECF88AB7204F2A8A0084E3CC /* View */ = {
+			isa = PBXGroup;
+			children = (
+				EC0723202047092400D119EC /* Main.storyboard */,
+				EC0723252047092400D119EC /* LaunchScreen.storyboard */,
+			);
+			path = View;
+			sourceTree = "<group>";
+		};
+		ECF88AB8204F2A8F0084E3CC /* Controller */ = {
+			isa = PBXGroup;
+			children = (
+				ECF88AB4204F289E0084E3CC /* TaskItemsTableViewController.swift */,
+				EC763A9F20476CB100E4CAF9 /* TaskCollectionViewCell.swift */,
+				EC07231E2047092400D119EC /* TasksViewController.swift */,
+				EC041E0020472D2F00FB14F8 /* AddNewCollectionViewController.swift */,
+			);
+			path = Controller;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -71,9 +182,12 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = EC07232B2047092400D119EC /* Build configuration list for PBXNativeTarget "iwannado" */;
 			buildPhases = (
+				5362218A48D15BCAF8C7B089 /* [CP] Check Pods Manifest.lock */,
 				EC0723152047092400D119EC /* Sources */,
 				EC0723162047092400D119EC /* Frameworks */,
 				EC0723172047092400D119EC /* Resources */,
+				FF9429F0407C6826649C9280 /* [CP] Embed Pods Frameworks */,
+				CCEAF2AF0A48379282BF441D /* [CP] Copy Pods Resources */,
 			);
 			buildRules = (
 			);
@@ -123,6 +237,8 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				ECBC624D204710C60061CCB5 /* Info.plist in Resources */,
+				ECB4CDCE20473C6C00E7673A /* Apalu.ttf in Resources */,
 				EC0723272047092400D119EC /* LaunchScreen.storyboard in Resources */,
 				EC0723242047092400D119EC /* Assets.xcassets in Resources */,
 				EC0723222047092400D119EC /* Main.storyboard in Resources */,
@@ -131,13 +247,82 @@
 		};
 /* End PBXResourcesBuildPhase section */
 
+/* Begin PBXShellScriptBuildPhase section */
+		5362218A48D15BCAF8C7B089 /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-iwannado-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+		CCEAF2AF0A48379282BF441D /* [CP] Copy Pods Resources */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Copy Pods Resources";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-iwannado/Pods-iwannado-resources.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		FF9429F0407C6826649C9280 /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+				"${SRCROOT}/Pods/Target Support Files/Pods-iwannado/Pods-iwannado-frameworks.sh",
+				"${BUILT_PRODUCTS_DIR}/GTProgressBar/GTProgressBar.framework",
+				"${BUILT_PRODUCTS_DIR}/TransitionButton/TransitionButton.framework",
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputPaths = (
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/GTProgressBar.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/TransitionButton.framework",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-iwannado/Pods-iwannado-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
+
 /* Begin PBXSourcesBuildPhase section */
 		EC0723152047092400D119EC /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				EC07231F2047092400D119EC /* ViewController.swift in Sources */,
+				ECBC6247204710C60061CCB5 /* TextFieldEffects.swift in Sources */,
+				EC07231F2047092400D119EC /* TasksViewController.swift in Sources */,
+				ECBC6243204710C60061CCB5 /* YoshikoTextField.swift in Sources */,
+				ECBC624C204710C60061CCB5 /* IsaoTextField.swift in Sources */,
+				ECBC6249204710C60061CCB5 /* MadokaTextField.swift in Sources */,
+				ECF88AB5204F289E0084E3CC /* TaskItemsTableViewController.swift in Sources */,
+				EC763AA020476CB100E4CAF9 /* TaskCollectionViewCell.swift in Sources */,
+				ECBC6248204710C60061CCB5 /* JiroTextField.swift in Sources */,
+				ECBC6245204710C60061CCB5 /* MinoruTextField.swift in Sources */,
+				EC041E0120472D2F00FB14F8 /* AddNewCollectionViewController.swift in Sources */,
+				ECBC624A204710C60061CCB5 /* KaedeTextField.swift in Sources */,
 				EC07231D2047092400D119EC /* AppDelegate.swift in Sources */,
+				ECBC6244204710C60061CCB5 /* HoshiTextField.swift in Sources */,
+				ECBC6246204710C60061CCB5 /* YokoTextField.swift in Sources */,
+				ECBC624B204710C60061CCB5 /* AkiraTextField.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -272,6 +457,7 @@
 		};
 		EC07232C2047092400D119EC /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 929C6B5CA5438127EDBC917F /* Pods-iwannado.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
@@ -281,12 +467,13 @@
 				PRODUCT_BUNDLE_IDENTIFIER = com.csomet.iwannado;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_VERSION = 4.0;
-				TARGETED_DEVICE_FAMILY = "1,2";
+				TARGETED_DEVICE_FAMILY = 1;
 			};
 			name = Debug;
 		};
 		EC07232D2047092400D119EC /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 3D2EC1A0786DE3B1F0D66EB3 /* Pods-iwannado.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
@@ -296,7 +483,7 @@
 				PRODUCT_BUNDLE_IDENTIFIER = com.csomet.iwannado;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_VERSION = 4.0;
-				TARGETED_DEVICE_FAMILY = "1,2";
+				TARGETED_DEVICE_FAMILY = 1;
 			};
 			name = Release;
 		};
