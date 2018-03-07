@@ -14,6 +14,7 @@
 		EC0723242047092400D119EC /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = EC0723232047092400D119EC /* Assets.xcassets */; };
 		EC0723272047092400D119EC /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = EC0723252047092400D119EC /* LaunchScreen.storyboard */; };
 		EC763AA020476CB100E4CAF9 /* TaskCollectionViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = EC763A9F20476CB100E4CAF9 /* TaskCollectionViewCell.swift */; };
+		EC9B70232050384700D9E435 /* Item.swift in Sources */ = {isa = PBXBuildFile; fileRef = EC9B70222050384700D9E435 /* Item.swift */; };
 		ECB4CDCE20473C6C00E7673A /* Apalu.ttf in Resources */ = {isa = PBXBuildFile; fileRef = ECB4CDCD20473C6C00E7673A /* Apalu.ttf */; };
 		ECBC6243204710C60061CCB5 /* YoshikoTextField.swift in Sources */ = {isa = PBXBuildFile; fileRef = ECBC6237204710C60061CCB5 /* YoshikoTextField.swift */; };
 		ECBC6244204710C60061CCB5 /* HoshiTextField.swift in Sources */ = {isa = PBXBuildFile; fileRef = ECBC6239204710C60061CCB5 /* HoshiTextField.swift */; };
@@ -43,6 +44,7 @@
 		EC0723262047092400D119EC /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		EC0723282047092400D119EC /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		EC763A9F20476CB100E4CAF9 /* TaskCollectionViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TaskCollectionViewCell.swift; sourceTree = "<group>"; };
+		EC9B70222050384700D9E435 /* Item.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Item.swift; sourceTree = "<group>"; };
 		ECB4CDCD20473C6C00E7673A /* Apalu.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = Apalu.ttf; sourceTree = "<group>"; };
 		ECBC6237204710C60061CCB5 /* YoshikoTextField.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = YoshikoTextField.swift; sourceTree = "<group>"; };
 		ECBC6238204710C60061CCB5 /* TextFieldEffects.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = TextFieldEffects.h; sourceTree = "<group>"; };
@@ -117,16 +119,25 @@
 		EC07231B2047092400D119EC /* iwannado */ = {
 			isa = PBXGroup;
 			children = (
+				EC07231C2047092400D119EC /* AppDelegate.swift */,
 				ECF88AB8204F2A8F0084E3CC /* Controller */,
 				ECF88AB7204F2A8A0084E3CC /* View */,
 				ECF88AB6204F2A7E0084E3CC /* Model */,
-				EC041E0220473C1300FB14F8 /* Fonts */,
-				ECBC6236204710C60061CCB5 /* TextFieldEffects */,
-				EC07231C2047092400D119EC /* AppDelegate.swift */,
-				EC0723232047092400D119EC /* Assets.xcassets */,
+				EC9B70242050395500D9E435 /* Supporting Files */,
 				EC0723282047092400D119EC /* Info.plist */,
 			);
 			path = iwannado;
+			sourceTree = "<group>";
+		};
+		EC9B70242050395500D9E435 /* Supporting Files */ = {
+			isa = PBXGroup;
+			children = (
+				EC0723232047092400D119EC /* Assets.xcassets */,
+				ECBC6236204710C60061CCB5 /* TextFieldEffects */,
+				EC041E0220473C1300FB14F8 /* Fonts */,
+				EC0723252047092400D119EC /* LaunchScreen.storyboard */,
+			);
+			path = "Supporting Files";
 			sourceTree = "<group>";
 		};
 		ECBC6236204710C60061CCB5 /* TextFieldEffects */ = {
@@ -151,6 +162,7 @@
 		ECF88AB6204F2A7E0084E3CC /* Model */ = {
 			isa = PBXGroup;
 			children = (
+				EC9B70222050384700D9E435 /* Item.swift */,
 			);
 			path = Model;
 			sourceTree = "<group>";
@@ -159,7 +171,6 @@
 			isa = PBXGroup;
 			children = (
 				EC0723202047092400D119EC /* Main.storyboard */,
-				EC0723252047092400D119EC /* LaunchScreen.storyboard */,
 			);
 			path = View;
 			sourceTree = "<group>";
@@ -312,6 +323,7 @@
 				EC07231F2047092400D119EC /* TasksViewController.swift in Sources */,
 				ECBC6243204710C60061CCB5 /* YoshikoTextField.swift in Sources */,
 				ECBC624C204710C60061CCB5 /* IsaoTextField.swift in Sources */,
+				EC9B70232050384700D9E435 /* Item.swift in Sources */,
 				ECBC6249204710C60061CCB5 /* MadokaTextField.swift in Sources */,
 				ECF88AB5204F289E0084E3CC /* TaskItemsTableViewController.swift in Sources */,
 				EC763AA020476CB100E4CAF9 /* TaskCollectionViewCell.swift in Sources */,
