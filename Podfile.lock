@@ -1,0 +1,15 @@
+PODS:
+  - GTProgressBar (0.2.3)
+  - TransitionButton (0.3.0)
+
+DEPENDENCIES:
+  - GTProgressBar
+  - TransitionButton
+
+SPEC CHECKSUMS:
+  GTProgressBar: ecfa9f2dfaca1b9b35811925f5bd53516ee591ae
+  TransitionButton: 0bf7e5ffe80030f9d10d57983a04acf2f511998a
+
+PODFILE CHECKSUM: f726ece328384579d32e9fa1698d629eb0f11be1
+
+COCOAPODS: 1.4.0

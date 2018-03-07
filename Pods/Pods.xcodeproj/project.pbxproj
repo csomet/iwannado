@@ -1,0 +1,779 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 48;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		05DD579368ECC8386D0D13159F5DDE46 /* GTProgressBarLabelPosition.swift in Sources */ = {isa = PBXBuildFile; fileRef = 79AC7C4865F6DDCA1FD4E74D726C1D66 /* GTProgressBarLabelPosition.swift */; };
+		1102D9D93E7BAB64182C2EFDA7E94D4D /* TransitionButton-umbrella.h in Headers */ = {isa = PBXBuildFile; fileRef = 8D35E93841706D68CC0AB26A5A71A490 /* TransitionButton-umbrella.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		11D436C4DD47990BAAE908C68EDD4A27 /* GTProgressBar-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = 2C21A9984F5AE494FCC342740F14D397 /* GTProgressBar-dummy.m */; };
+		202ACD8F78FC2FE6433A6A5EB01EE919 /* TransitionButton-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = E9F96D6506DBFE0FF28AFDD166B8E390 /* TransitionButton-dummy.m */; };
+		203D830DF4700E7A7D05892D90F8A44A /* CGRectExtension.swift in Sources */ = {isa = PBXBuildFile; fileRef = C190EBC6327205C86B4F6D127135B029 /* CGRectExtension.swift */; };
+		230AD7B41F8F46A8DF2D9FA2481EB313 /* GTProgressBar.swift in Sources */ = {isa = PBXBuildFile; fileRef = 700D2F3E3A9AC1A280CF4326E5C498C7 /* GTProgressBar.swift */; };
+		2391DD3F740F886539CC101ADB762034 /* TransitionButton.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5AFE918E8717E078FA32E21F87186897 /* TransitionButton.swift */; };
+		23E6E0B35DEC0B9C4BEF07ECCD3712A6 /* FrameCalculator.swift in Sources */ = {isa = PBXBuildFile; fileRef = 95E391ECC53C217C3A68DEC65316C6ED /* FrameCalculator.swift */; };
+		421A34124268FC588BD377D4AD7AE525 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = D88AAE1F92055A60CC2FC970D7D34634 /* Foundation.framework */; };
+		475C61F9960C2E15F10AE86497BE49E9 /* GTProgressBarDirection.swift in Sources */ = {isa = PBXBuildFile; fileRef = 175FF91E748A9C77927F6E3EB46F9075 /* GTProgressBarDirection.swift */; };
+		4D74BE105D78776BA6F0B53B0F662885 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = D88AAE1F92055A60CC2FC970D7D34634 /* Foundation.framework */; };
+		50B62264448279F5DC7A4F3B03FAB700 /* Pods-iwannado-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = F156A8CAE4A1898EFA83D81EBBDC1C92 /* Pods-iwannado-dummy.m */; };
+		5860E27B5A02FE0015892F6B1F60B5A7 /* UIViewExtensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2AF061F96324840688ED2D8096ECDD5D /* UIViewExtensions.swift */; };
+		6DCC7B4285E40F300AF51F7E09E2A81A /* CustomTransitionViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = B153934B124059265B1FA61CD17B3454 /* CustomTransitionViewController.swift */; };
+		7284F29C934F55061BD38DF26F6C5454 /* FadeTransition.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8D48C45AD6573F0E0A975F61CC2AA5B0 /* FadeTransition.swift */; };
+		80A19A8885D9685B0FEB7FFB549C9686 /* SpinerLayer.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2547E0ECC5BE938C103A23B7F477D6D6 /* SpinerLayer.swift */; };
+		83D6F7FAF3BB61A14145EE7EC3776822 /* GTProgressBar-umbrella.h in Headers */ = {isa = PBXBuildFile; fileRef = D02117F0FCBFB0AC8FFD8B087DC5B39F /* GTProgressBar-umbrella.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		9F2443A36755544EB3D40A6AE442FC39 /* HorizontalLabelPositionFrameCalculator.swift in Sources */ = {isa = PBXBuildFile; fileRef = E79FC64F31377075DCA258729D5ADBFC /* HorizontalLabelPositionFrameCalculator.swift */; };
+		A01465E3794DFE4B040123ABAB3A5086 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = D88AAE1F92055A60CC2FC970D7D34634 /* Foundation.framework */; };
+		A71CDF4D49A2D962F00F872F6E379EED /* Pods-iwannado-umbrella.h in Headers */ = {isa = PBXBuildFile; fileRef = 9152B87671A1BFA7217F98CACFCD697B /* Pods-iwannado-umbrella.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		B05F4809E0BA9822058F9F43748CF9FA /* UILabelExtensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = 682F83DA00E1A4299E3970AE9B92AD97 /* UILabelExtensions.swift */; };
+		C5D94DAF34240E89E201A399568E5817 /* GTProgressBarOrientation.swift in Sources */ = {isa = PBXBuildFile; fileRef = FB6AEE041213987EC61E436AA1B0587E /* GTProgressBarOrientation.swift */; };
+		F958DC621DE32E6F66322583C13456A2 /* VerticalLabelPositionFrameCalculator.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4DE6DA67419FCED682D454B1014F5092 /* VerticalLabelPositionFrameCalculator.swift */; };
+		FC3BFFCE3D33148B9A39836308B00E4D /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = B63C6A64CF66340668996F78DA6BB482 /* UIKit.framework */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		DA7432EEE3F8426729AD6015500FCF6D /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = D41D8CD98F00B204E9800998ECF8427E /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = D7925F311CE4D9EA799633138272ACC2;
+			remoteInfo = GTProgressBar;
+		};
+		F05CE1CCCEA13764FAE5097511DBF136 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = D41D8CD98F00B204E9800998ECF8427E /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 1876FB3FBE9BA3E83D0EA4B04AC49439;
+			remoteInfo = TransitionButton;
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXFileReference section */
+		175FF91E748A9C77927F6E3EB46F9075 /* GTProgressBarDirection.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = GTProgressBarDirection.swift; path = GTProgressBar/Classes/GTProgressBarDirection.swift; sourceTree = "<group>"; };
+		1C43A5DFC32F90379B11F7FFE76C0FC3 /* Info.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		2547E0ECC5BE938C103A23B7F477D6D6 /* SpinerLayer.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = SpinerLayer.swift; path = Source/SpinerLayer.swift; sourceTree = "<group>"; };
+		2AF061F96324840688ED2D8096ECDD5D /* UIViewExtensions.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = UIViewExtensions.swift; path = GTProgressBar/Classes/UIViewExtensions.swift; sourceTree = "<group>"; };
+		2C21A9984F5AE494FCC342740F14D397 /* GTProgressBar-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "GTProgressBar-dummy.m"; sourceTree = "<group>"; };
+		4605C6C311DD7EB7041150097A59E3D7 /* GTProgressBar.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = GTProgressBar.xcconfig; sourceTree = "<group>"; };
+		4DE6DA67419FCED682D454B1014F5092 /* VerticalLabelPositionFrameCalculator.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = VerticalLabelPositionFrameCalculator.swift; path = GTProgressBar/Classes/VerticalLabelPositionFrameCalculator.swift; sourceTree = "<group>"; };
+		513989AA3FEBF0F12395B11FA0282060 /* GTProgressBar.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; name = GTProgressBar.framework; path = GTProgressBar.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		5AFE918E8717E078FA32E21F87186897 /* TransitionButton.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = TransitionButton.swift; path = Source/TransitionButton.swift; sourceTree = "<group>"; };
+		682F83DA00E1A4299E3970AE9B92AD97 /* UILabelExtensions.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = UILabelExtensions.swift; path = GTProgressBar/Classes/UILabelExtensions.swift; sourceTree = "<group>"; };
+		700D2F3E3A9AC1A280CF4326E5C498C7 /* GTProgressBar.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = GTProgressBar.swift; path = GTProgressBar/Classes/GTProgressBar.swift; sourceTree = "<group>"; };
+		71A17323BF3E3917631647A495E59D4A /* GTProgressBar.modulemap */ = {isa = PBXFileReference; includeInIndex = 1; path = GTProgressBar.modulemap; sourceTree = "<group>"; };
+		79AC7C4865F6DDCA1FD4E74D726C1D66 /* GTProgressBarLabelPosition.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = GTProgressBarLabelPosition.swift; path = GTProgressBar/Classes/GTProgressBarLabelPosition.swift; sourceTree = "<group>"; };
+		7BC51084C7060F62D5C9BEB0ED118451 /* Pods-iwannado-acknowledgements.markdown */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text; path = "Pods-iwannado-acknowledgements.markdown"; sourceTree = "<group>"; };
+		8D35E93841706D68CC0AB26A5A71A490 /* TransitionButton-umbrella.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "TransitionButton-umbrella.h"; sourceTree = "<group>"; };
+		8D48C45AD6573F0E0A975F61CC2AA5B0 /* FadeTransition.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = FadeTransition.swift; path = Source/FadeTransition.swift; sourceTree = "<group>"; };
+		8E15570026C6F3F63D6F5DEE7B5584A6 /* Pods-iwannado.modulemap */ = {isa = PBXFileReference; includeInIndex = 1; path = "Pods-iwannado.modulemap"; sourceTree = "<group>"; };
+		9152B87671A1BFA7217F98CACFCD697B /* Pods-iwannado-umbrella.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "Pods-iwannado-umbrella.h"; sourceTree = "<group>"; };
+		93A4A3777CF96A4AAC1D13BA6DCCEA73 /* Podfile */ = {isa = PBXFileReference; explicitFileType = text.script.ruby; includeInIndex = 1; lastKnownFileType = text; name = Podfile; path = ../Podfile; sourceTree = SOURCE_ROOT; xcLanguageSpecificationIdentifier = xcode.lang.ruby; };
+		95E391ECC53C217C3A68DEC65316C6ED /* FrameCalculator.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = FrameCalculator.swift; path = GTProgressBar/Classes/FrameCalculator.swift; sourceTree = "<group>"; };
+		9DC4EF4F98E23C5EC11E5E40727559F2 /* Info.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		B01BBF3560826DC8A287C7169B4EA226 /* Pods_iwannado.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; name = Pods_iwannado.framework; path = "Pods-iwannado.framework"; sourceTree = BUILT_PRODUCTS_DIR; };
+		B153934B124059265B1FA61CD17B3454 /* CustomTransitionViewController.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = CustomTransitionViewController.swift; path = Source/CustomTransitionViewController.swift; sourceTree = "<group>"; };
+		B63C6A64CF66340668996F78DA6BB482 /* UIKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = UIKit.framework; path = Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS10.3.sdk/System/Library/Frameworks/UIKit.framework; sourceTree = DEVELOPER_DIR; };
+		B96996138C21F8CA0DEDF9FDD9CB9561 /* TransitionButton.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; name = TransitionButton.framework; path = TransitionButton.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		BD73894BFDF7CF55FAF7CFE573DEAADF /* Pods-iwannado-frameworks.sh */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.script.sh; path = "Pods-iwannado-frameworks.sh"; sourceTree = "<group>"; };
+		BDA1E5C5E7F10EED6E45A57EBBD92865 /* Pods-iwannado.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-iwannado.debug.xcconfig"; sourceTree = "<group>"; };
+		BF82B5F78BA7A5DF8925ACFC717655CA /* Pods-iwannado-acknowledgements.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = "Pods-iwannado-acknowledgements.plist"; sourceTree = "<group>"; };
+		C078A96B46B2B7355DB6F320FF4C077A /* TransitionButton.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = TransitionButton.xcconfig; sourceTree = "<group>"; };
+		C190EBC6327205C86B4F6D127135B029 /* CGRectExtension.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = CGRectExtension.swift; path = Source/CGRectExtension.swift; sourceTree = "<group>"; };
+		C4F661C2413564D134D69363828A8056 /* TransitionButton.modulemap */ = {isa = PBXFileReference; includeInIndex = 1; path = TransitionButton.modulemap; sourceTree = "<group>"; };
+		CC8FC2F4087465E66D8E46942B6725A1 /* Info.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		D02117F0FCBFB0AC8FFD8B087DC5B39F /* GTProgressBar-umbrella.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "GTProgressBar-umbrella.h"; sourceTree = "<group>"; };
+		D0D3B9F95B2DAD88923DD53A252AFDA8 /* Pods-iwannado.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-iwannado.release.xcconfig"; sourceTree = "<group>"; };
+		D88AAE1F92055A60CC2FC970D7D34634 /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS10.3.sdk/System/Library/Frameworks/Foundation.framework; sourceTree = DEVELOPER_DIR; };
+		E79FC64F31377075DCA258729D5ADBFC /* HorizontalLabelPositionFrameCalculator.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = HorizontalLabelPositionFrameCalculator.swift; path = GTProgressBar/Classes/HorizontalLabelPositionFrameCalculator.swift; sourceTree = "<group>"; };
+		E9F96D6506DBFE0FF28AFDD166B8E390 /* TransitionButton-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "TransitionButton-dummy.m"; sourceTree = "<group>"; };
+		EB510C8C51B401D417E49769287BE970 /* GTProgressBar-prefix.pch */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "GTProgressBar-prefix.pch"; sourceTree = "<group>"; };
+		F0948DED6F2012ADB4D052BF9FF3CE49 /* Pods-iwannado-resources.sh */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.script.sh; path = "Pods-iwannado-resources.sh"; sourceTree = "<group>"; };
+		F156A8CAE4A1898EFA83D81EBBDC1C92 /* Pods-iwannado-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "Pods-iwannado-dummy.m"; sourceTree = "<group>"; };
+		FB6AEE041213987EC61E436AA1B0587E /* GTProgressBarOrientation.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = GTProgressBarOrientation.swift; path = GTProgressBar/Classes/GTProgressBarOrientation.swift; sourceTree = "<group>"; };
+		FDCC7A78437C8169714FC6B87DFA97DC /* TransitionButton-prefix.pch */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "TransitionButton-prefix.pch"; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		29C365D5C7823CFEFD3224460922636C /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				421A34124268FC588BD377D4AD7AE525 /* Foundation.framework in Frameworks */,
+				FC3BFFCE3D33148B9A39836308B00E4D /* UIKit.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		2E38A6AFBF3B4CEBD3A6CBD23E5D53AE /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				A01465E3794DFE4B040123ABAB3A5086 /* Foundation.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		C2AEF15070B3C74C0B229DA98E87340A /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				4D74BE105D78776BA6F0B53B0F662885 /* Foundation.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		003EC9E91EBCA6C084E9130DB168FED2 /* Pods-iwannado */ = {
+			isa = PBXGroup;
+			children = (
+				9DC4EF4F98E23C5EC11E5E40727559F2 /* Info.plist */,
+				8E15570026C6F3F63D6F5DEE7B5584A6 /* Pods-iwannado.modulemap */,
+				7BC51084C7060F62D5C9BEB0ED118451 /* Pods-iwannado-acknowledgements.markdown */,
+				BF82B5F78BA7A5DF8925ACFC717655CA /* Pods-iwannado-acknowledgements.plist */,
+				F156A8CAE4A1898EFA83D81EBBDC1C92 /* Pods-iwannado-dummy.m */,
+				BD73894BFDF7CF55FAF7CFE573DEAADF /* Pods-iwannado-frameworks.sh */,
+				F0948DED6F2012ADB4D052BF9FF3CE49 /* Pods-iwannado-resources.sh */,
+				9152B87671A1BFA7217F98CACFCD697B /* Pods-iwannado-umbrella.h */,
+				BDA1E5C5E7F10EED6E45A57EBBD92865 /* Pods-iwannado.debug.xcconfig */,
+				D0D3B9F95B2DAD88923DD53A252AFDA8 /* Pods-iwannado.release.xcconfig */,
+			);
+			name = "Pods-iwannado";
+			path = "Target Support Files/Pods-iwannado";
+			sourceTree = "<group>";
+		};
+		2DC3E919258CBC066EE6E76C3ED61E37 /* GTProgressBar */ = {
+			isa = PBXGroup;
+			children = (
+				95E391ECC53C217C3A68DEC65316C6ED /* FrameCalculator.swift */,
+				700D2F3E3A9AC1A280CF4326E5C498C7 /* GTProgressBar.swift */,
+				175FF91E748A9C77927F6E3EB46F9075 /* GTProgressBarDirection.swift */,
+				79AC7C4865F6DDCA1FD4E74D726C1D66 /* GTProgressBarLabelPosition.swift */,
+				FB6AEE041213987EC61E436AA1B0587E /* GTProgressBarOrientation.swift */,
+				E79FC64F31377075DCA258729D5ADBFC /* HorizontalLabelPositionFrameCalculator.swift */,
+				682F83DA00E1A4299E3970AE9B92AD97 /* UILabelExtensions.swift */,
+				2AF061F96324840688ED2D8096ECDD5D /* UIViewExtensions.swift */,
+				4DE6DA67419FCED682D454B1014F5092 /* VerticalLabelPositionFrameCalculator.swift */,
+				8FE25BF5227E755414671C17B935874E /* Support Files */,
+			);
+			name = GTProgressBar;
+			path = GTProgressBar;
+			sourceTree = "<group>";
+		};
+		3686C8BB1636505862A93536E14707A0 /* Support Files */ = {
+			isa = PBXGroup;
+			children = (
+				1C43A5DFC32F90379B11F7FFE76C0FC3 /* Info.plist */,
+				C4F661C2413564D134D69363828A8056 /* TransitionButton.modulemap */,
+				C078A96B46B2B7355DB6F320FF4C077A /* TransitionButton.xcconfig */,
+				E9F96D6506DBFE0FF28AFDD166B8E390 /* TransitionButton-dummy.m */,
+				FDCC7A78437C8169714FC6B87DFA97DC /* TransitionButton-prefix.pch */,
+				8D35E93841706D68CC0AB26A5A71A490 /* TransitionButton-umbrella.h */,
+			);
+			name = "Support Files";
+			path = "../Target Support Files/TransitionButton";
+			sourceTree = "<group>";
+		};
+		433CD3331B6C3787F473C941B61FC68F /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				438B396F6B4147076630CAEFE34282C1 /* iOS */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		438B396F6B4147076630CAEFE34282C1 /* iOS */ = {
+			isa = PBXGroup;
+			children = (
+				D88AAE1F92055A60CC2FC970D7D34634 /* Foundation.framework */,
+				B63C6A64CF66340668996F78DA6BB482 /* UIKit.framework */,
+			);
+			name = iOS;
+			sourceTree = "<group>";
+		};
+		7DB346D0F39D3F0E887471402A8071AB = {
+			isa = PBXGroup;
+			children = (
+				93A4A3777CF96A4AAC1D13BA6DCCEA73 /* Podfile */,
+				433CD3331B6C3787F473C941B61FC68F /* Frameworks */,
+				E97BC0431B2643CAE21FBF4638A1EAE3 /* Pods */,
+				E936A0ACAFC5F51C8F7CA5FE05B91C59 /* Products */,
+				A429BDFA58E0C13645CFB36FDA801045 /* Targets Support Files */,
+			);
+			sourceTree = "<group>";
+		};
+		8FE25BF5227E755414671C17B935874E /* Support Files */ = {
+			isa = PBXGroup;
+			children = (
+				71A17323BF3E3917631647A495E59D4A /* GTProgressBar.modulemap */,
+				4605C6C311DD7EB7041150097A59E3D7 /* GTProgressBar.xcconfig */,
+				2C21A9984F5AE494FCC342740F14D397 /* GTProgressBar-dummy.m */,
+				EB510C8C51B401D417E49769287BE970 /* GTProgressBar-prefix.pch */,
+				D02117F0FCBFB0AC8FFD8B087DC5B39F /* GTProgressBar-umbrella.h */,
+				CC8FC2F4087465E66D8E46942B6725A1 /* Info.plist */,
+			);
+			name = "Support Files";
+			path = "../Target Support Files/GTProgressBar";
+			sourceTree = "<group>";
+		};
+		A429BDFA58E0C13645CFB36FDA801045 /* Targets Support Files */ = {
+			isa = PBXGroup;
+			children = (
+				003EC9E91EBCA6C084E9130DB168FED2 /* Pods-iwannado */,
+			);
+			name = "Targets Support Files";
+			sourceTree = "<group>";
+		};
+		E77538224BB2E77AB6B5F86553B7F0DB /* TransitionButton */ = {
+			isa = PBXGroup;
+			children = (
+				C190EBC6327205C86B4F6D127135B029 /* CGRectExtension.swift */,
+				B153934B124059265B1FA61CD17B3454 /* CustomTransitionViewController.swift */,
+				8D48C45AD6573F0E0A975F61CC2AA5B0 /* FadeTransition.swift */,
+				2547E0ECC5BE938C103A23B7F477D6D6 /* SpinerLayer.swift */,
+				5AFE918E8717E078FA32E21F87186897 /* TransitionButton.swift */,
+				3686C8BB1636505862A93536E14707A0 /* Support Files */,
+			);
+			name = TransitionButton;
+			path = TransitionButton;
+			sourceTree = "<group>";
+		};
+		E936A0ACAFC5F51C8F7CA5FE05B91C59 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				513989AA3FEBF0F12395B11FA0282060 /* GTProgressBar.framework */,
+				B01BBF3560826DC8A287C7169B4EA226 /* Pods_iwannado.framework */,
+				B96996138C21F8CA0DEDF9FDD9CB9561 /* TransitionButton.framework */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		E97BC0431B2643CAE21FBF4638A1EAE3 /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				2DC3E919258CBC066EE6E76C3ED61E37 /* GTProgressBar */,
+				E77538224BB2E77AB6B5F86553B7F0DB /* TransitionButton */,
+			);
+			name = Pods;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXHeadersBuildPhase section */
+		0019AC89B92077A4B437977E30176FC5 /* Headers */ = {
+			isa = PBXHeadersBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				1102D9D93E7BAB64182C2EFDA7E94D4D /* TransitionButton-umbrella.h in Headers */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		4DE105CCDB1DED402F05415EEBBC80DD /* Headers */ = {
+			isa = PBXHeadersBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				83D6F7FAF3BB61A14145EE7EC3776822 /* GTProgressBar-umbrella.h in Headers */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		7E0D978E0BFB16555E9BAF2572431C23 /* Headers */ = {
+			isa = PBXHeadersBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				A71CDF4D49A2D962F00F872F6E379EED /* Pods-iwannado-umbrella.h in Headers */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXHeadersBuildPhase section */
+
+/* Begin PBXNativeTarget section */
+		1876FB3FBE9BA3E83D0EA4B04AC49439 /* TransitionButton */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = E22C1F3B3868DD9BCA8F9C60D0505331 /* Build configuration list for PBXNativeTarget "TransitionButton" */;
+			buildPhases = (
+				E3BD9BD4F486E9314DA78014E59CE393 /* Sources */,
+				29C365D5C7823CFEFD3224460922636C /* Frameworks */,
+				0019AC89B92077A4B437977E30176FC5 /* Headers */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = TransitionButton;
+			productName = TransitionButton;
+			productReference = B96996138C21F8CA0DEDF9FDD9CB9561 /* TransitionButton.framework */;
+			productType = "com.apple.product-type.framework";
+		};
+		63F134C3FF894D2AED24A1C3F2A4B904 /* Pods-iwannado */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = A86A7C158EF97128F306A6E0FF7EB305 /* Build configuration list for PBXNativeTarget "Pods-iwannado" */;
+			buildPhases = (
+				182973B423B59D385232D06EC3E4E19C /* Sources */,
+				C2AEF15070B3C74C0B229DA98E87340A /* Frameworks */,
+				7E0D978E0BFB16555E9BAF2572431C23 /* Headers */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				CC099FA0EEDC6F9729A7472BAD9CD108 /* PBXTargetDependency */,
+				443AA0D7C535F516B1185AA16269E973 /* PBXTargetDependency */,
+			);
+			name = "Pods-iwannado";
+			productName = "Pods-iwannado";
+			productReference = B01BBF3560826DC8A287C7169B4EA226 /* Pods_iwannado.framework */;
+			productType = "com.apple.product-type.framework";
+		};
+		D7925F311CE4D9EA799633138272ACC2 /* GTProgressBar */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 2AB45F5434AD947DD3BC2685DA2EC5C6 /* Build configuration list for PBXNativeTarget "GTProgressBar" */;
+			buildPhases = (
+				DC63261C55E5099A88DBF1C16F44CBDC /* Sources */,
+				2E38A6AFBF3B4CEBD3A6CBD23E5D53AE /* Frameworks */,
+				4DE105CCDB1DED402F05415EEBBC80DD /* Headers */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = GTProgressBar;
+			productName = GTProgressBar;
+			productReference = 513989AA3FEBF0F12395B11FA0282060 /* GTProgressBar.framework */;
+			productType = "com.apple.product-type.framework";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		D41D8CD98F00B204E9800998ECF8427E /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastSwiftUpdateCheck = 0830;
+				LastUpgradeCheck = 0700;
+			};
+			buildConfigurationList = 2D8E8EC45A3A1A1D94AE762CB5028504 /* Build configuration list for PBXProject "Pods" */;
+			compatibilityVersion = "Xcode 3.2";
+			developmentRegion = English;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+			);
+			mainGroup = 7DB346D0F39D3F0E887471402A8071AB;
+			productRefGroup = E936A0ACAFC5F51C8F7CA5FE05B91C59 /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				D7925F311CE4D9EA799633138272ACC2 /* GTProgressBar */,
+				63F134C3FF894D2AED24A1C3F2A4B904 /* Pods-iwannado */,
+				1876FB3FBE9BA3E83D0EA4B04AC49439 /* TransitionButton */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXSourcesBuildPhase section */
+		182973B423B59D385232D06EC3E4E19C /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				50B62264448279F5DC7A4F3B03FAB700 /* Pods-iwannado-dummy.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		DC63261C55E5099A88DBF1C16F44CBDC /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				23E6E0B35DEC0B9C4BEF07ECCD3712A6 /* FrameCalculator.swift in Sources */,
+				11D436C4DD47990BAAE908C68EDD4A27 /* GTProgressBar-dummy.m in Sources */,
+				230AD7B41F8F46A8DF2D9FA2481EB313 /* GTProgressBar.swift in Sources */,
+				475C61F9960C2E15F10AE86497BE49E9 /* GTProgressBarDirection.swift in Sources */,
+				05DD579368ECC8386D0D13159F5DDE46 /* GTProgressBarLabelPosition.swift in Sources */,
+				C5D94DAF34240E89E201A399568E5817 /* GTProgressBarOrientation.swift in Sources */,
+				9F2443A36755544EB3D40A6AE442FC39 /* HorizontalLabelPositionFrameCalculator.swift in Sources */,
+				B05F4809E0BA9822058F9F43748CF9FA /* UILabelExtensions.swift in Sources */,
+				5860E27B5A02FE0015892F6B1F60B5A7 /* UIViewExtensions.swift in Sources */,
+				F958DC621DE32E6F66322583C13456A2 /* VerticalLabelPositionFrameCalculator.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		E3BD9BD4F486E9314DA78014E59CE393 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				203D830DF4700E7A7D05892D90F8A44A /* CGRectExtension.swift in Sources */,
+				6DCC7B4285E40F300AF51F7E09E2A81A /* CustomTransitionViewController.swift in Sources */,
+				7284F29C934F55061BD38DF26F6C5454 /* FadeTransition.swift in Sources */,
+				80A19A8885D9685B0FEB7FFB549C9686 /* SpinerLayer.swift in Sources */,
+				202ACD8F78FC2FE6433A6A5EB01EE919 /* TransitionButton-dummy.m in Sources */,
+				2391DD3F740F886539CC101ADB762034 /* TransitionButton.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		443AA0D7C535F516B1185AA16269E973 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			name = TransitionButton;
+			target = 1876FB3FBE9BA3E83D0EA4B04AC49439 /* TransitionButton */;
+			targetProxy = F05CE1CCCEA13764FAE5097511DBF136 /* PBXContainerItemProxy */;
+		};
+		CC099FA0EEDC6F9729A7472BAD9CD108 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			name = GTProgressBar;
+			target = D7925F311CE4D9EA799633138272ACC2 /* GTProgressBar */;
+			targetProxy = DA7432EEE3F8426729AD6015500FCF6D /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin XCBuildConfiguration section */
+		207349FAC16EE72017D9663D92B5B622 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 4605C6C311DD7EB7041150097A59E3D7 /* GTProgressBar.xcconfig */;
+			buildSettings = {
+				CODE_SIGN_IDENTITY = "";
+				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=watchos*]" = "";
+				CURRENT_PROJECT_VERSION = 1;
+				DEFINES_MODULE = YES;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				GCC_PREFIX_HEADER = "Target Support Files/GTProgressBar/GTProgressBar-prefix.pch";
+				INFOPLIST_FILE = "Target Support Files/GTProgressBar/Info.plist";
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				IPHONEOS_DEPLOYMENT_TARGET = 8.3;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				MODULEMAP_FILE = "Target Support Files/GTProgressBar/GTProgressBar.modulemap";
+				PRODUCT_NAME = GTProgressBar;
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = "$(inherited) ";
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+				SWIFT_VERSION = 4.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VERSIONING_SYSTEM = "apple-generic";
+				VERSION_INFO_PREFIX = "";
+			};
+			name = Debug;
+		};
+		23766F5A17C09F731EA3E1159DE247BA /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = C078A96B46B2B7355DB6F320FF4C077A /* TransitionButton.xcconfig */;
+			buildSettings = {
+				CODE_SIGN_IDENTITY = "";
+				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=watchos*]" = "";
+				CURRENT_PROJECT_VERSION = 1;
+				DEFINES_MODULE = YES;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				GCC_PREFIX_HEADER = "Target Support Files/TransitionButton/TransitionButton-prefix.pch";
+				INFOPLIST_FILE = "Target Support Files/TransitionButton/Info.plist";
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				MODULEMAP_FILE = "Target Support Files/TransitionButton/TransitionButton.modulemap";
+				PRODUCT_NAME = TransitionButton;
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = "$(inherited) ";
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+				SWIFT_VERSION = 4.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VERSIONING_SYSTEM = "apple-generic";
+				VERSION_INFO_PREFIX = "";
+			};
+			name = Debug;
+		};
+		6F9224530522DD3C735EC96CF142642E /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				CODE_SIGNING_REQUIRED = NO;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"POD_CONFIGURATION_RELEASE=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 9.0;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				PROVISIONING_PROFILE_SPECIFIER = NO_SIGNING/;
+				STRIP_INSTALLED_PRODUCT = NO;
+				SYMROOT = "${SRCROOT}/../build";
+			};
+			name = Release;
+		};
+		70B9AD254E8FA55D9EB0560BF7547606 /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 4605C6C311DD7EB7041150097A59E3D7 /* GTProgressBar.xcconfig */;
+			buildSettings = {
+				CODE_SIGN_IDENTITY = "";
+				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=watchos*]" = "";
+				CURRENT_PROJECT_VERSION = 1;
+				DEFINES_MODULE = YES;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				GCC_PREFIX_HEADER = "Target Support Files/GTProgressBar/GTProgressBar-prefix.pch";
+				INFOPLIST_FILE = "Target Support Files/GTProgressBar/Info.plist";
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				IPHONEOS_DEPLOYMENT_TARGET = 8.3;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				MODULEMAP_FILE = "Target Support Files/GTProgressBar/GTProgressBar.modulemap";
+				PRODUCT_NAME = GTProgressBar;
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = "$(inherited) ";
+				SWIFT_OPTIMIZATION_LEVEL = "-Owholemodule";
+				SWIFT_VERSION = 4.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VALIDATE_PRODUCT = YES;
+				VERSIONING_SYSTEM = "apple-generic";
+				VERSION_INFO_PREFIX = "";
+			};
+			name = Release;
+		};
+		B57951D085A1B98A97F8A1062A5E5C5B /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				CODE_SIGNING_REQUIRED = NO;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"POD_CONFIGURATION_DEBUG=1",
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 9.0;
+				MTL_ENABLE_DEBUG_INFO = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				PROVISIONING_PROFILE_SPECIFIER = NO_SIGNING/;
+				STRIP_INSTALLED_PRODUCT = NO;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = DEBUG;
+				SYMROOT = "${SRCROOT}/../build";
+			};
+			name = Debug;
+		};
+		BA3FCB990CE7AA9E2AF54CBBB6AB2E5D /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = BDA1E5C5E7F10EED6E45A57EBBD92865 /* Pods-iwannado.debug.xcconfig */;
+			buildSettings = {
+				CODE_SIGN_IDENTITY = "";
+				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=watchos*]" = "";
+				CURRENT_PROJECT_VERSION = 1;
+				DEFINES_MODULE = YES;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				INFOPLIST_FILE = "Target Support Files/Pods-iwannado/Info.plist";
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				IPHONEOS_DEPLOYMENT_TARGET = 9.0;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				MACH_O_TYPE = staticlib;
+				MODULEMAP_FILE = "Target Support Files/Pods-iwannado/Pods-iwannado.modulemap";
+				OTHER_LDFLAGS = "";
+				OTHER_LIBTOOLFLAGS = "";
+				PODS_ROOT = "$(SRCROOT)";
+				PRODUCT_BUNDLE_IDENTIFIER = "org.cocoapods.${PRODUCT_NAME:rfc1034identifier}";
+				PRODUCT_NAME = Pods_iwannado;
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = DEBUG;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VERSIONING_SYSTEM = "apple-generic";
+				VERSION_INFO_PREFIX = "";
+			};
+			name = Debug;
+		};
+		BBD905806D7E76AFC2F54F74D6C47DAE /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = C078A96B46B2B7355DB6F320FF4C077A /* TransitionButton.xcconfig */;
+			buildSettings = {
+				CODE_SIGN_IDENTITY = "";
+				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=watchos*]" = "";
+				CURRENT_PROJECT_VERSION = 1;
+				DEFINES_MODULE = YES;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				GCC_PREFIX_HEADER = "Target Support Files/TransitionButton/TransitionButton-prefix.pch";
+				INFOPLIST_FILE = "Target Support Files/TransitionButton/Info.plist";
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				MODULEMAP_FILE = "Target Support Files/TransitionButton/TransitionButton.modulemap";
+				PRODUCT_NAME = TransitionButton;
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = "$(inherited) ";
+				SWIFT_OPTIMIZATION_LEVEL = "-Owholemodule";
+				SWIFT_VERSION = 4.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VALIDATE_PRODUCT = YES;
+				VERSIONING_SYSTEM = "apple-generic";
+				VERSION_INFO_PREFIX = "";
+			};
+			name = Release;
+		};
+		DE7383F461875F5B89AE1FFF0FFA0CD4 /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = D0D3B9F95B2DAD88923DD53A252AFDA8 /* Pods-iwannado.release.xcconfig */;
+			buildSettings = {
+				CODE_SIGN_IDENTITY = "";
+				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=watchos*]" = "";
+				CURRENT_PROJECT_VERSION = 1;
+				DEFINES_MODULE = YES;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				INFOPLIST_FILE = "Target Support Files/Pods-iwannado/Info.plist";
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				IPHONEOS_DEPLOYMENT_TARGET = 9.0;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				MACH_O_TYPE = staticlib;
+				MODULEMAP_FILE = "Target Support Files/Pods-iwannado/Pods-iwannado.modulemap";
+				OTHER_LDFLAGS = "";
+				OTHER_LIBTOOLFLAGS = "";
+				PODS_ROOT = "$(SRCROOT)";
+				PRODUCT_BUNDLE_IDENTIFIER = "org.cocoapods.${PRODUCT_NAME:rfc1034identifier}";
+				PRODUCT_NAME = Pods_iwannado;
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+				SWIFT_OPTIMIZATION_LEVEL = "-Owholemodule";
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VALIDATE_PRODUCT = YES;
+				VERSIONING_SYSTEM = "apple-generic";
+				VERSION_INFO_PREFIX = "";
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		2AB45F5434AD947DD3BC2685DA2EC5C6 /* Build configuration list for PBXNativeTarget "GTProgressBar" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				207349FAC16EE72017D9663D92B5B622 /* Debug */,
+				70B9AD254E8FA55D9EB0560BF7547606 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		2D8E8EC45A3A1A1D94AE762CB5028504 /* Build configuration list for PBXProject "Pods" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				B57951D085A1B98A97F8A1062A5E5C5B /* Debug */,
+				6F9224530522DD3C735EC96CF142642E /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		A86A7C158EF97128F306A6E0FF7EB305 /* Build configuration list for PBXNativeTarget "Pods-iwannado" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				BA3FCB990CE7AA9E2AF54CBBB6AB2E5D /* Debug */,
+				DE7383F461875F5B89AE1FFF0FFA0CD4 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		E22C1F3B3868DD9BCA8F9C60D0505331 /* Build configuration list for PBXNativeTarget "TransitionButton" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				23766F5A17C09F731EA3E1159DE247BA /* Debug */,
+				BBD905806D7E76AFC2F54F74D6C47DAE /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = D41D8CD98F00B204E9800998ECF8427E /* Project object */;
+}
