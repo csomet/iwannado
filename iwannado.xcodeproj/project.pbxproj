@@ -14,7 +14,6 @@
 		EC0723242047092400D119EC /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = EC0723232047092400D119EC /* Assets.xcassets */; };
 		EC0723272047092400D119EC /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = EC0723252047092400D119EC /* LaunchScreen.storyboard */; };
 		EC763AA020476CB100E4CAF9 /* TaskCollectionViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = EC763A9F20476CB100E4CAF9 /* TaskCollectionViewCell.swift */; };
-		EC9B70232050384700D9E435 /* Item.swift in Sources */ = {isa = PBXBuildFile; fileRef = EC9B70222050384700D9E435 /* Item.swift */; };
 		EC9B702720505C5E00D9E435 /* DataModel.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = EC9B702520505C5E00D9E435 /* DataModel.xcdatamodeld */; };
 		ECB4CDCE20473C6C00E7673A /* Apalu.ttf in Resources */ = {isa = PBXBuildFile; fileRef = ECB4CDCD20473C6C00E7673A /* Apalu.ttf */; };
 		ECBC6243204710C60061CCB5 /* YoshikoTextField.swift in Sources */ = {isa = PBXBuildFile; fileRef = ECBC6237204710C60061CCB5 /* YoshikoTextField.swift */; };
@@ -45,7 +44,6 @@
 		EC0723262047092400D119EC /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		EC0723282047092400D119EC /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		EC763A9F20476CB100E4CAF9 /* TaskCollectionViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TaskCollectionViewCell.swift; sourceTree = "<group>"; };
-		EC9B70222050384700D9E435 /* Item.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Item.swift; sourceTree = "<group>"; };
 		EC9B702620505C5E00D9E435 /* DataModel.xcdatamodel */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcdatamodel; path = DataModel.xcdatamodel; sourceTree = "<group>"; };
 		ECB4CDCD20473C6C00E7673A /* Apalu.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = Apalu.ttf; sourceTree = "<group>"; };
 		ECBC6237204710C60061CCB5 /* YoshikoTextField.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = YoshikoTextField.swift; sourceTree = "<group>"; };
@@ -165,7 +163,6 @@
 			isa = PBXGroup;
 			children = (
 				EC9B702520505C5E00D9E435 /* DataModel.xcdatamodeld */,
-				EC9B70222050384700D9E435 /* Item.swift */,
 			);
 			path = Model;
 			sourceTree = "<group>";
@@ -327,7 +324,6 @@
 				ECBC6243204710C60061CCB5 /* YoshikoTextField.swift in Sources */,
 				ECBC624C204710C60061CCB5 /* IsaoTextField.swift in Sources */,
 				EC9B702720505C5E00D9E435 /* DataModel.xcdatamodeld in Sources */,
-				EC9B70232050384700D9E435 /* Item.swift in Sources */,
 				ECBC6249204710C60061CCB5 /* MadokaTextField.swift in Sources */,
 				ECF88AB5204F289E0084E3CC /* TaskItemsTableViewController.swift in Sources */,
 				EC763AA020476CB100E4CAF9 /* TaskCollectionViewCell.swift in Sources */,
