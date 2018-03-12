@@ -7,12 +7,14 @@
 //
 
 import UIKit
+import GTProgressBar
 
 class TaskCollectionViewCell: UICollectionViewCell {
     
     
-    @IBOutlet weak var image: UIImageView!
-    
+    @IBOutlet weak var TaskImage: UIImageView!
+    @IBOutlet weak var taskLabel: UILabel!
+    @IBOutlet weak var progressBar: GTProgressBar!
     
     
     

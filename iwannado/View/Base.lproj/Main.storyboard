@@ -6,10 +6,15 @@
     <dependencies>
         <deployment identifier="iOS"/>
         <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="13772"/>
+        <capability name="Constraints to layout margins" minToolsVersion="6.0"/>
         <capability name="Safe area layout guides" minToolsVersion="9.0"/>
         <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
     </dependencies>
     <customFonts key="customFonts">
+        <array key="AvenirNext.ttc">
+            <string>AvenirNext-DemiBold</string>
+            <string>AvenirNext-Medium</string>
+        </array>
         <array key="Farah.ttc">
             <string>Farah</string>
         </array>
@@ -18,13 +23,23 @@
         <!--CollectionViewTask-->
         <scene sceneID="tne-QT-ifu">
             <objects>
-                <viewController id="BYZ-38-t0r" userLabel="CollectionViewTask" customClass="TasksViewController" customModule="iwannado" customModuleProvider="target" sceneMemberID="viewController">
+                <viewController storyboardIdentifier="Tasks" id="BYZ-38-t0r" userLabel="CollectionViewTask" customClass="TasksViewController" customModule="iwannado" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="8bC-Xf-vdC">
                         <rect key="frame" x="0.0" y="0.0" width="375" height="812"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="No tasks yet..." textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="TeF-cx-ojI">
+                                <rect key="frame" x="0.0" y="377" width="375" height="58"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="58" id="I2V-vS-eW5"/>
+                                    <constraint firstAttribute="width" relation="greaterThanOrEqual" constant="375" id="Sfy-ee-R2N"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" name="AvenirNext-DemiBold" family="Avenir Next" pointSize="18"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
                             <collectionView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" dataMode="prototypes" translatesAutoresizingMaskIntoConstraints="NO" id="E0r-ra-5vk" userLabel="Task Collection View">
-                                <rect key="frame" x="0.0" y="140" width="375" height="672"/>
+                                <rect key="frame" x="0.0" y="184.33333333333331" width="375" height="627.66666666666674"/>
                                 <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                 <collectionViewFlowLayout key="collectionViewLayout" minimumLineSpacing="10" minimumInteritemSpacing="10" id="6gg-5y-d8s">
                                     <size key="itemSize" width="176" height="200"/>
@@ -104,7 +119,9 @@
                                             </userDefinedRuntimeAttribute>
                                         </userDefinedRuntimeAttributes>
                                         <connections>
-                                            <outlet property="image" destination="XBK-0o-Ifi" id="3HK-Qy-bbg"/>
+                                            <outlet property="TaskImage" destination="XBK-0o-Ifi" id="t30-zq-wOs"/>
+                                            <outlet property="progressBar" destination="8Vi-pr-YhD" id="Mit-PI-jdt"/>
+                                            <outlet property="taskLabel" destination="aiV-h0-9zu" id="mjw-Zu-SZV"/>
                                         </connections>
                                     </collectionViewCell>
                                 </cells>
@@ -135,9 +152,11 @@
                             <constraint firstAttribute="bottom" secondItem="E0r-ra-5vk" secondAttribute="bottom" id="23r-ZD-rwG"/>
                             <constraint firstItem="xau-g3-QFA" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" constant="155" id="7qD-vj-qGM"/>
                             <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="xau-g3-QFA" secondAttribute="trailing" constant="156" id="K1M-PA-JL3"/>
+                            <constraint firstItem="TeF-cx-ojI" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="eMc-mq-xsK"/>
                             <constraint firstItem="E0r-ra-5vk" firstAttribute="trailing" secondItem="6Tk-OE-BBY" secondAttribute="trailing" id="gyu-9Y-QTD"/>
                             <constraint firstItem="6Tk-OE-BBY" firstAttribute="bottom" secondItem="xau-g3-QFA" secondAttribute="bottom" constant="36" id="hbO-vT-UrT"/>
                             <constraint firstItem="E0r-ra-5vk" firstAttribute="top" secondItem="6Tk-OE-BBY" secondAttribute="top" id="qrs-zV-lhb"/>
+                            <constraint firstItem="TeF-cx-ojI" firstAttribute="centerY" secondItem="8bC-Xf-vdC" secondAttribute="centerY" id="tJL-xd-seg"/>
                             <constraint firstItem="E0r-ra-5vk" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" id="yqU-te-wgK"/>
                         </constraints>
                         <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>
@@ -146,7 +165,9 @@
                         <barButtonItem key="backBarButtonItem" title="Tasks" id="m59-9l-Ls1"/>
                     </navigationItem>
                     <connections>
+                        <outlet property="noTasksLabel" destination="TeF-cx-ojI" id="zKH-EE-4lO"/>
                         <outlet property="taskCollectionView" destination="E0r-ra-5vk" id="G4j-Wn-DM0"/>
+                        <segue destination="LZB-RV-rOX" kind="show" identifier="GoToItemsTask" id="hA8-vx-bcn"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
@@ -162,13 +183,42 @@
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                         <prototypes>
-                            <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" preservesSuperviewLayoutMargins="YES" selectionStyle="default" accessoryType="checkmark" indentationWidth="10" reuseIdentifier="ToDoItem" id="48f-Bd-VjF">
+                            <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" preservesSuperviewLayoutMargins="YES" selectionStyle="default" indentationWidth="10" reuseIdentifier="ToDoItem" id="48f-Bd-VjF" customClass="ItemTableViewCell" customModule="iwannado" customModuleProvider="target">
                                 <rect key="frame" x="0.0" y="28" width="375" height="44"/>
                                 <autoresizingMask key="autoresizingMask"/>
                                 <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" preservesSuperviewLayoutMargins="YES" insetsLayoutMarginsFromSafeArea="NO" tableViewCell="48f-Bd-VjF" id="soW-kn-W8V">
-                                    <rect key="frame" x="0.0" y="0.0" width="335" height="43.666666666666664"/>
+                                    <rect key="frame" x="0.0" y="0.0" width="375" height="43.666666666666664"/>
                                     <autoresizingMask key="autoresizingMask"/>
+                                    <subviews>
+                                        <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="KLa-eQ-y9t">
+                                            <rect key="frame" x="334" y="9" width="25" height="25"/>
+                                            <constraints>
+                                                <constraint firstAttribute="width" constant="25" id="Sc2-7O-HBM"/>
+                                            </constraints>
+                                            <state key="normal" title="Button" image="icon-checkbox-unselected-25x25"/>
+                                            <connections>
+                                                <action selector="activateCheckBox:" destination="48f-Bd-VjF" eventType="touchUpInside" id="Ef9-FK-D5K"/>
+                                            </connections>
+                                        </button>
+                                        <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Pm5-1i-ITV">
+                                            <rect key="frame" x="16" y="9.9999999999999982" width="310" height="23.333333333333329"/>
+                                            <fontDescription key="fontDescription" name="AvenirNext-Medium" family="Avenir Next" pointSize="17"/>
+                                            <nil key="textColor"/>
+                                            <nil key="highlightedColor"/>
+                                        </label>
+                                    </subviews>
+                                    <constraints>
+                                        <constraint firstItem="Pm5-1i-ITV" firstAttribute="leading" secondItem="soW-kn-W8V" secondAttribute="leadingMargin" id="6qy-S3-Cma"/>
+                                        <constraint firstItem="KLa-eQ-y9t" firstAttribute="leading" secondItem="Pm5-1i-ITV" secondAttribute="trailing" constant="8" symbolic="YES" id="B9r-bE-heK"/>
+                                        <constraint firstItem="KLa-eQ-y9t" firstAttribute="trailing" secondItem="soW-kn-W8V" secondAttribute="trailingMargin" id="hof-ya-mzR"/>
+                                        <constraint firstItem="KLa-eQ-y9t" firstAttribute="centerY" secondItem="soW-kn-W8V" secondAttribute="centerY" id="oru-r5-UqW"/>
+                                        <constraint firstItem="Pm5-1i-ITV" firstAttribute="top" secondItem="soW-kn-W8V" secondAttribute="topMargin" constant="-1" id="ulU-K0-2aq"/>
+                                    </constraints>
                                 </tableViewCellContentView>
+                                <connections>
+                                    <outlet property="checkBoxButton" destination="KLa-eQ-y9t" id="pYg-JL-UyN"/>
+                                    <outlet property="itemTextLabel" destination="Pm5-1i-ITV" id="aWA-WI-fqt"/>
+                                </connections>
                             </tableViewCell>
                         </prototypes>
                         <connections>
@@ -176,10 +226,17 @@
                             <outlet property="delegate" destination="LZB-RV-rOX" id="nwW-8Y-PrH"/>
                         </connections>
                     </tableView>
+                    <navigationItem key="navigationItem" id="eVw-fT-mrJ">
+                        <barButtonItem key="rightBarButtonItem" systemItem="add" id="qHI-ff-cA4">
+                            <connections>
+                                <action selector="addNewItemTodo:" destination="LZB-RV-rOX" id="D0a-Rc-JKP"/>
+                            </connections>
+                        </barButtonItem>
+                    </navigationItem>
                 </tableViewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="XzC-pH-DXc" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="1070" y="122"/>
+            <point key="canvasLocation" x="1069.5999999999999" y="121.92118226600985"/>
         </scene>
         <!--CollectionTaskNew-->
         <scene sceneID="hZi-AX-AKh">
@@ -189,12 +246,12 @@
                         <rect key="frame" x="0.0" y="0.0" width="375" height="812"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="9dk-3h-vn0">
-                                <rect key="frame" x="155.66666666666666" y="688" width="64" height="64"/>
+                            <button opaque="NO" tag="1" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="9dk-3h-vn0">
+                                <rect key="frame" x="117" y="714" width="64" height="64"/>
                                 <color key="backgroundColor" red="0.99999600649999998" green="1" blue="1" alpha="0.0" colorSpace="custom" customColorSpace="sRGB"/>
                                 <constraints>
-                                    <constraint firstAttribute="width" constant="64" id="2BZ-XT-rad"/>
-                                    <constraint firstAttribute="height" constant="64" id="9dW-lB-xfV"/>
+                                    <constraint firstAttribute="height" constant="64" id="OTC-mU-94q"/>
+                                    <constraint firstAttribute="width" constant="64" id="Thy-o3-bd4"/>
                                 </constraints>
                                 <state key="normal" image="icon-save">
                                     <color key="titleColor" red="0.98039215686274506" green="0.39215686274509803" blue="0.3529411764705882" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
@@ -208,18 +265,112 @@
                                     <action selector="saveButton:" destination="LGb-iI-lrb" eventType="touchUpInside" id="qew-1C-QSs"/>
                                 </connections>
                             </button>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="UMF-ws-FBt">
+                                <rect key="frame" x="194" y="714" width="64" height="64"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="64" id="FYy-Az-CQ0"/>
+                                    <constraint firstAttribute="height" constant="64" id="xjk-ls-WU7"/>
+                                </constraints>
+                                <state key="normal" image="icon-cancel"/>
+                                <connections>
+                                    <action selector="saveButton:" destination="LGb-iI-lrb" eventType="touchUpInside" id="eA2-Wo-69W"/>
+                                </connections>
+                            </button>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Add the title for the new task:" textAlignment="natural" lineBreakMode="tailTruncation" numberOfLines="2" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="d3H-Am-SHz">
+                                <rect key="frame" x="13" y="82" width="247" height="24.666666666666671"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <fontDescription key="fontDescription" name="AvenirNext-DemiBold" family="Avenir Next" pointSize="18"/>
+                                <color key="textColor" red="0.99999600649999998" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <textField opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="left" contentVerticalAlignment="center" placeholder="Introduce task title" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="VNZ-ZD-UPm" customClass="JiroTextField" customModule="iwannado" customModuleProvider="target">
+                                <rect key="frame" x="50" y="158" width="281" height="46"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <color key="textColor" red="0.99999600649999998" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                <textInputTraits key="textInputTraits" enablesReturnKeyAutomatically="YES"/>
+                                <userDefinedRuntimeAttributes>
+                                    <userDefinedRuntimeAttribute type="color" keyPath="placeholderColor">
+                                        <color key="value" red="0.99999600649999998" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                    </userDefinedRuntimeAttribute>
+                                    <userDefinedRuntimeAttribute type="number" keyPath="placeholderFontScale">
+                                        <real key="value" value="1"/>
+                                    </userDefinedRuntimeAttribute>
+                                    <userDefinedRuntimeAttribute type="color" keyPath="borderColor">
+                                        <color key="value" red="0.99889677759999995" green="0.67881911989999999" blue="0.54463583230000001" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                    </userDefinedRuntimeAttribute>
+                                </userDefinedRuntimeAttributes>
+                            </textField>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Choose category:" textAlignment="natural" lineBreakMode="tailTruncation" numberOfLines="2" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="77D-4K-e7i">
+                                <rect key="frame" x="16" y="274" width="288" height="25"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <fontDescription key="fontDescription" name="AvenirNext-DemiBold" family="Avenir Next" pointSize="18"/>
+                                <color key="textColor" red="0.99999600649999998" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="6OW-cF-wcb" customClass="SSRadioButton" customModule="iwannado" customModuleProvider="target">
+                                <rect key="frame" x="111" y="350" width="153" height="37"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <fontDescription key="fontDescription" name="AvenirNext-Medium" family="Avenir Next" pointSize="18"/>
+                                <color key="tintColor" red="0.99999600649999998" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                <state key="normal" title="To do list">
+                                    <color key="titleShadowColor" red="0.99999600649999998" green="1" blue="1" alpha="0.0" colorSpace="custom" customColorSpace="sRGB"/>
+                                </state>
+                                <userDefinedRuntimeAttributes>
+                                    <userDefinedRuntimeAttribute type="color" keyPath="circleColor">
+                                        <color key="value" red="0.99889677759999995" green="0.67881911989999999" blue="0.54463583230000001" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                    </userDefinedRuntimeAttribute>
+                                    <userDefinedRuntimeAttribute type="number" keyPath="circleRadius">
+                                        <real key="value" value="12"/>
+                                    </userDefinedRuntimeAttribute>
+                                    <userDefinedRuntimeAttribute type="color" keyPath="strokeColor">
+                                        <color key="value" red="0.99999600649999998" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                    </userDefinedRuntimeAttribute>
+                                </userDefinedRuntimeAttributes>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="SPG-aG-j79" customClass="SSRadioButton" customModule="iwannado" customModuleProvider="target">
+                                <rect key="frame" x="111" y="416" width="153" height="30"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <fontDescription key="fontDescription" name="AvenirNext-Medium" family="Avenir Next" pointSize="18"/>
+                                <color key="tintColor" red="0.99999600649999998" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                <state key="normal" title="Shopping list">
+                                    <color key="titleShadowColor" red="0.99999600649999998" green="1" blue="1" alpha="0.0" colorSpace="custom" customColorSpace="sRGB"/>
+                                </state>
+                                <userDefinedRuntimeAttributes>
+                                    <userDefinedRuntimeAttribute type="color" keyPath="circleColor">
+                                        <color key="value" red="0.99889677759999995" green="0.67881911989999999" blue="0.54463583230000001" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                    </userDefinedRuntimeAttribute>
+                                    <userDefinedRuntimeAttribute type="number" keyPath="circleRadius">
+                                        <real key="value" value="12"/>
+                                    </userDefinedRuntimeAttribute>
+                                    <userDefinedRuntimeAttribute type="color" keyPath="strokeColor">
+                                        <color key="value" red="0.99999600649999998" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                    </userDefinedRuntimeAttribute>
+                                </userDefinedRuntimeAttributes>
+                            </button>
                         </subviews>
                         <color key="backgroundColor" red="0.98039215686274506" green="0.39215686274509803" blue="0.3529411764705882" alpha="1" colorSpace="calibratedRGB"/>
                         <constraints>
-                            <constraint firstItem="bVT-25-2VF" firstAttribute="bottom" secondItem="9dk-3h-vn0" secondAttribute="bottom" constant="26" id="J0S-mH-4u3"/>
-                            <constraint firstItem="9dk-3h-vn0" firstAttribute="centerX" secondItem="efb-4M-bgU" secondAttribute="centerX" id="NMH-O5-lW5"/>
+                            <constraint firstItem="9dk-3h-vn0" firstAttribute="leading" secondItem="bVT-25-2VF" secondAttribute="leading" constant="117" id="0Dd-8A-1sV"/>
+                            <constraint firstItem="9dk-3h-vn0" firstAttribute="top" secondItem="bVT-25-2VF" secondAttribute="top" constant="670" id="BcE-W9-QUp"/>
+                            <constraint firstItem="UMF-ws-FBt" firstAttribute="bottom" secondItem="bVT-25-2VF" secondAttribute="bottom" id="C9Z-lH-fqi"/>
+                            <constraint firstItem="UMF-ws-FBt" firstAttribute="leading" secondItem="9dk-3h-vn0" secondAttribute="trailing" constant="13" id="Pi7-nQ-yhp"/>
+                            <constraint firstItem="UMF-ws-FBt" firstAttribute="leading" secondItem="9dk-3h-vn0" secondAttribute="trailing" constant="13" id="aen-NN-d5p"/>
+                            <constraint firstItem="9dk-3h-vn0" firstAttribute="bottom" secondItem="bVT-25-2VF" secondAttribute="bottom" id="f5d-vj-xjf"/>
+                            <constraint firstItem="UMF-ws-FBt" firstAttribute="top" secondItem="bVT-25-2VF" secondAttribute="top" constant="670" id="gUR-C9-hIO"/>
+                            <constraint firstItem="bVT-25-2VF" firstAttribute="trailing" secondItem="UMF-ws-FBt" secondAttribute="trailing" constant="117" id="jKc-3Y-Ouq"/>
                         </constraints>
                         <viewLayoutGuide key="safeArea" id="bVT-25-2VF"/>
                     </view>
+                    <connections>
+                        <outlet property="shoppingListButton" destination="SPG-aG-j79" id="dYy-Lg-O8S"/>
+                        <outlet property="taskName" destination="VNZ-ZD-UPm" id="hl2-0z-QGo"/>
+                        <outlet property="todoListButton" destination="6OW-cF-wcb" id="JJf-ZS-xLV"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="4e5-9i-sen" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="317.60000000000002" y="832.75862068965523"/>
+            <point key="canvasLocation" x="316" y="1047"/>
         </scene>
         <!--Navigation Controller-->
         <scene sceneID="TVZ-Nc-aPk">
@@ -229,6 +380,7 @@
                     <navigationBar key="navigationBar" contentMode="scaleToFill" insetsLayoutMarginsFromSafeArea="NO" largeTitles="YES" id="HQW-a4-6XG">
                         <rect key="frame" x="0.0" y="44" width="375" height="140.33333333333331"/>
                         <autoresizingMask key="autoresizingMask"/>
+                        <color key="tintColor" red="0.99999600649999998" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                         <color key="barTintColor" red="0.98039215686274506" green="0.396078431372549" blue="0.3529411764705882" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                         <textAttributes key="titleTextAttributes">
                             <fontDescription key="fontDescription" name="Apalu" family="Apalu" pointSize="40"/>
@@ -251,6 +403,8 @@
     </scenes>
     <resources>
         <image name="icon-add" width="64" height="64"/>
+        <image name="icon-cancel" width="96" height="96"/>
+        <image name="icon-checkbox-unselected-25x25" width="25" height="25"/>
         <image name="icon-save" width="100" height="100"/>
         <image name="icon-shopping" width="100" height="100"/>
     </resources>
