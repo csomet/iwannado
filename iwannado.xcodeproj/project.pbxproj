@@ -200,8 +200,8 @@
 		ECF88AB8204F2A8F0084E3CC /* Controller */ = {
 			isa = PBXGroup;
 			children = (
-				ECF88AB4204F289E0084E3CC /* TaskItemsTableViewController.swift */,
 				EC74A0632056AF09005FD36C /* ItemTableViewCell.swift */,
+				ECF88AB4204F289E0084E3CC /* TaskItemsTableViewController.swift */,
 				EC763A9F20476CB100E4CAF9 /* TaskCollectionViewCell.swift */,
 				EC07231E2047092400D119EC /* TasksViewController.swift */,
 				EC041E0020472D2F00FB14F8 /* AddNewCollectionViewController.swift */,

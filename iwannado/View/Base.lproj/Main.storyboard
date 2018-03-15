@@ -96,19 +96,30 @@
                                                         </userDefinedRuntimeAttribute>
                                                     </userDefinedRuntimeAttributes>
                                                 </view>
+                                                <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="QrV-uj-Yjc">
+                                                    <rect key="frame" x="0.0" y="0.0" width="35" height="35"/>
+                                                    <state key="normal" image="erase-icon"/>
+                                                    <connections>
+                                                        <action selector="deleteTask:" destination="cDT-2E-1s0" eventType="touchUpInside" id="OTF-cF-KQt"/>
+                                                    </connections>
+                                                </button>
                                             </subviews>
                                         </view>
                                         <color key="backgroundColor" red="0.97647058823529409" green="0.83137254901960778" blue="0.83137254901960778" alpha="0.44004173801369861" colorSpace="custom" customColorSpace="sRGB"/>
                                         <color key="tintColor" red="0.99889677762985229" green="0.67881911993026733" blue="0.5446358323097229" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                         <constraints>
+                                            <constraint firstItem="QrV-uj-Yjc" firstAttribute="leading" secondItem="aiV-h0-9zu" secondAttribute="leading" id="042-PP-BKh"/>
+                                            <constraint firstItem="QrV-uj-Yjc" firstAttribute="top" secondItem="cDT-2E-1s0" secondAttribute="top" id="0C3-0S-AEp"/>
                                             <constraint firstItem="aiV-h0-9zu" firstAttribute="leading" secondItem="cDT-2E-1s0" secondAttribute="leading" id="0ZO-w8-ulI"/>
                                             <constraint firstItem="aiV-h0-9zu" firstAttribute="top" secondItem="XBK-0o-Ifi" secondAttribute="bottom" id="9ge-je-htD"/>
                                             <constraint firstItem="8Vi-pr-YhD" firstAttribute="top" secondItem="aiV-h0-9zu" secondAttribute="bottom" constant="12" id="AEd-4I-d30"/>
                                             <constraint firstAttribute="bottom" secondItem="8Vi-pr-YhD" secondAttribute="bottom" constant="32" id="EB6-h5-nsa"/>
+                                            <constraint firstItem="aiV-h0-9zu" firstAttribute="top" secondItem="QrV-uj-Yjc" secondAttribute="bottom" constant="86" id="KKN-Zn-YzV"/>
                                             <constraint firstItem="XBK-0o-Ifi" firstAttribute="top" secondItem="cDT-2E-1s0" secondAttribute="top" constant="20" id="SJm-M8-z7x"/>
                                             <constraint firstItem="XBK-0o-Ifi" firstAttribute="leading" secondItem="cDT-2E-1s0" secondAttribute="leading" constant="38" id="VoW-MS-VAY"/>
                                             <constraint firstAttribute="trailing" secondItem="8Vi-pr-YhD" secondAttribute="trailing" constant="11" id="ZQB-so-VVM"/>
                                             <constraint firstItem="8Vi-pr-YhD" firstAttribute="leading" secondItem="cDT-2E-1s0" secondAttribute="leading" constant="11" id="bcS-Rv-BYd"/>
+                                            <constraint firstItem="XBK-0o-Ifi" firstAttribute="leading" secondItem="QrV-uj-Yjc" secondAttribute="trailing" constant="3" id="jf7-bd-GLk"/>
                                             <constraint firstAttribute="trailing" secondItem="aiV-h0-9zu" secondAttribute="trailing" id="l0j-7g-i08"/>
                                             <constraint firstAttribute="trailing" secondItem="XBK-0o-Ifi" secondAttribute="trailing" constant="37" id="xw3-Ou-Dwt"/>
                                         </constraints>
@@ -246,13 +257,10 @@
                         <rect key="frame" x="0.0" y="0.0" width="375" height="812"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <button opaque="NO" tag="1" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="9dk-3h-vn0">
-                                <rect key="frame" x="117" y="714" width="64" height="64"/>
+                            <button opaque="NO" tag="1" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="9dk-3h-vn0">
+                                <rect key="frame" x="50" y="738" width="40" height="40"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <color key="backgroundColor" red="0.99999600649999998" green="1" blue="1" alpha="0.0" colorSpace="custom" customColorSpace="sRGB"/>
-                                <constraints>
-                                    <constraint firstAttribute="height" constant="64" id="OTC-mU-94q"/>
-                                    <constraint firstAttribute="width" constant="64" id="Thy-o3-bd4"/>
-                                </constraints>
                                 <state key="normal" image="icon-save">
                                     <color key="titleColor" red="0.98039215686274506" green="0.39215686274509803" blue="0.3529411764705882" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                 </state>
@@ -265,19 +273,8 @@
                                     <action selector="saveButton:" destination="LGb-iI-lrb" eventType="touchUpInside" id="qew-1C-QSs"/>
                                 </connections>
                             </button>
-                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="UMF-ws-FBt">
-                                <rect key="frame" x="194" y="714" width="64" height="64"/>
-                                <constraints>
-                                    <constraint firstAttribute="width" constant="64" id="FYy-Az-CQ0"/>
-                                    <constraint firstAttribute="height" constant="64" id="xjk-ls-WU7"/>
-                                </constraints>
-                                <state key="normal" image="icon-cancel"/>
-                                <connections>
-                                    <action selector="saveButton:" destination="LGb-iI-lrb" eventType="touchUpInside" id="eA2-Wo-69W"/>
-                                </connections>
-                            </button>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Add the title for the new task:" textAlignment="natural" lineBreakMode="tailTruncation" numberOfLines="2" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="d3H-Am-SHz">
-                                <rect key="frame" x="13" y="82" width="247" height="24.666666666666671"/>
+                                <rect key="frame" x="13" y="82" width="247" height="25"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <fontDescription key="fontDescription" name="AvenirNext-DemiBold" family="Avenir Next" pointSize="18"/>
                                 <color key="textColor" red="0.99999600649999998" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
@@ -348,18 +345,16 @@
                                     </userDefinedRuntimeAttribute>
                                 </userDefinedRuntimeAttributes>
                             </button>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="UMF-ws-FBt">
+                                <rect key="frame" x="291" y="738" width="40" height="40"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <state key="normal" image="icon-cancel"/>
+                                <connections>
+                                    <action selector="saveButton:" destination="LGb-iI-lrb" eventType="touchUpInside" id="eA2-Wo-69W"/>
+                                </connections>
+                            </button>
                         </subviews>
                         <color key="backgroundColor" red="0.98039215686274506" green="0.39215686274509803" blue="0.3529411764705882" alpha="1" colorSpace="calibratedRGB"/>
-                        <constraints>
-                            <constraint firstItem="9dk-3h-vn0" firstAttribute="leading" secondItem="bVT-25-2VF" secondAttribute="leading" constant="117" id="0Dd-8A-1sV"/>
-                            <constraint firstItem="9dk-3h-vn0" firstAttribute="top" secondItem="bVT-25-2VF" secondAttribute="top" constant="670" id="BcE-W9-QUp"/>
-                            <constraint firstItem="UMF-ws-FBt" firstAttribute="bottom" secondItem="bVT-25-2VF" secondAttribute="bottom" id="C9Z-lH-fqi"/>
-                            <constraint firstItem="UMF-ws-FBt" firstAttribute="leading" secondItem="9dk-3h-vn0" secondAttribute="trailing" constant="13" id="Pi7-nQ-yhp"/>
-                            <constraint firstItem="UMF-ws-FBt" firstAttribute="leading" secondItem="9dk-3h-vn0" secondAttribute="trailing" constant="13" id="aen-NN-d5p"/>
-                            <constraint firstItem="9dk-3h-vn0" firstAttribute="bottom" secondItem="bVT-25-2VF" secondAttribute="bottom" id="f5d-vj-xjf"/>
-                            <constraint firstItem="UMF-ws-FBt" firstAttribute="top" secondItem="bVT-25-2VF" secondAttribute="top" constant="670" id="gUR-C9-hIO"/>
-                            <constraint firstItem="bVT-25-2VF" firstAttribute="trailing" secondItem="UMF-ws-FBt" secondAttribute="trailing" constant="117" id="jKc-3Y-Ouq"/>
-                        </constraints>
                         <viewLayoutGuide key="safeArea" id="bVT-25-2VF"/>
                     </view>
                     <connections>
@@ -370,7 +365,7 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="4e5-9i-sen" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="316" y="1047"/>
+            <point key="canvasLocation" x="316" y="800.98522167487693"/>
         </scene>
         <!--Navigation Controller-->
         <scene sceneID="TVZ-Nc-aPk">
@@ -378,7 +373,7 @@
                 <navigationController automaticallyAdjustsScrollViewInsets="NO" id="GFo-LJ-sFW" sceneMemberID="viewController">
                     <toolbarItems/>
                     <navigationBar key="navigationBar" contentMode="scaleToFill" insetsLayoutMarginsFromSafeArea="NO" largeTitles="YES" id="HQW-a4-6XG">
-                        <rect key="frame" x="0.0" y="44" width="375" height="140.33333333333331"/>
+                        <rect key="frame" x="0.0" y="44" width="375" height="96"/>
                         <autoresizingMask key="autoresizingMask"/>
                         <color key="tintColor" red="0.99999600649999998" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                         <color key="barTintColor" red="0.98039215686274506" green="0.396078431372549" blue="0.3529411764705882" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
@@ -402,6 +397,7 @@
         </scene>
     </scenes>
     <resources>
+        <image name="erase-icon" width="50" height="50"/>
         <image name="icon-add" width="64" height="64"/>
         <image name="icon-cancel" width="96" height="96"/>
         <image name="icon-checkbox-unselected-25x25" width="25" height="25"/>

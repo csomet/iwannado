@@ -33,11 +33,22 @@ class AddNewCollectionViewController: CustomTransitionViewController {
     @IBAction func saveButton(_ sender: UIButton) {
         
         if sender.tag == 1 {
+          
+            if taskName.text == "" || selectedTypeTask == nil{
+                
+                let alert = UIAlertController(title: "Error", message: "You must enter a title for the task and category below", preferredStyle: .alert)
+                let action = UIAlertAction(title: "OK", style: .default, handler: nil)
+                alert.addAction(action)
+                present(alert, animated: true, completion: nil)
+                
+            } else {
+                //Create Task in DB
+                DataBase.sharedInstance.insertNewTaskInDataBase(name: taskName.text!, type: selectedTypeTask!)
+                
+                self.dismiss(animated: true, completion: nil)
+            }
             
-            //Create Task in DB
-            DataBase.sharedInstance.insertNewTaskInDataBase(name: taskName.text!, type: selectedTypeTask!)
             
-          self.dismiss(animated: true, completion: nil)
             
         } else if sender.tag == 0 {
             

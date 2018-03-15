@@ -73,6 +73,20 @@ class TaskItemsTableViewController: UITableViewController {
         return cell
         
     }
+    
+    override func tableView(_ tableView: UITableView, commit editingStyle: UITableViewCellEditingStyle, forRowAt indexPath: IndexPath) {
+        
+        let parentTask : Task = App.items[indexPath.row].parentTask!
+        
+        if editingStyle == .delete {
+            DataBase.sharedInstance.deleteItem(item: App.items[indexPath.row])
+            tableView.deleteRows(at: [indexPath], with: .fade)
+        }
+        
+        parentTask.completed = getCompletedProgress()
+        
+        DataBase.sharedInstance.saveContext()
+    }
 
     
 

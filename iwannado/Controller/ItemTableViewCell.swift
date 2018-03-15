@@ -39,28 +39,6 @@ class ItemTableViewCell: UITableViewCell {
         
     }
     
-    
-    func getCompletedProgress()-> Float{
-        
-        var completedItem : Float = 0
-        var progress : Float = 0
-        
-        for item in App.items {
-            if item.isDone{
-                completedItem = completedItem + 1
-            }
-        }
-        
-        progress = completedItem / Float(App.items.count)
-        
-        let progressRounded = String(format:"%.1f", progress)
-
-        return Float(progressRounded)!
-    }
-    
-    
-    
-    
 }
 
 

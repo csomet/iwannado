@@ -75,7 +75,6 @@ class TasksViewController: UIViewController {
     }
     
     
-    
 }
 
 extension TasksViewController : UICollectionViewDataSource, UICollectionViewDelegate {
@@ -88,6 +87,10 @@ extension TasksViewController : UICollectionViewDataSource, UICollectionViewDele
     func collectionView(_ collectionView: UICollectionView, cellForItemAt indexPath: IndexPath) -> UICollectionViewCell {
         
         let taskCell = taskCollectionView.dequeueReusableCell(withReuseIdentifier: "TaskCell", for: indexPath) as! TaskCollectionViewCell
+        
+        taskCell.delegate = self
+        
+        taskCell.Task = App.tasks[indexPath.row]
         
         switch App.tasks[indexPath.row].type {
             
@@ -127,5 +130,14 @@ extension TasksViewController : UICollectionViewDataSource, UICollectionViewDele
     }
     
 
+}
+
+extension TasksViewController : TaskCollectionViewCellUpdater{
+    func collectionViewUpdate() {
+        taskCollectionView.reloadData()
+        hideCollectionViewWhenNoData()
+    }
+    
+    
 }
 

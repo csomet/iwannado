@@ -115,6 +115,48 @@ class DataBase {
     
     
     /**
+     Delete a Task from the database and task array. It also deletes all items within the selected task.
+     - parameter name: Task we want to delete.
+     */
+    func deleteTask(task: Task){
+ 
+        loadItemsFromDB(selectedTask: task)
+        
+        
+        for item in App.items {
+            context.delete(item)
+        }
+        
+        App.items.removeAll()
+       
+        context.delete(task)
+        
+        saveContext()
+        
+        loadTasksFromDB()
+    }
+    
+    /**
+     Delete a Item from the database.
+     - parameter name: Item we want to delete.
+     */
+    func deleteItem(item: Item){
+        
+        var parentTask : Task?
+        
+        parentTask = item.parentTask
+        
+        context.delete(item)
+        
+        saveContext()
+        
+        loadItemsFromDB(selectedTask: parentTask!)
+    
+   
+    }
+    
+    
+    /**
      Execute commit (save changes) to the data base.
      No params needed.
      */
