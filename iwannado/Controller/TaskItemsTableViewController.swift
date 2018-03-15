@@ -87,7 +87,27 @@ class TaskItemsTableViewController: UITableViewController {
         
         DataBase.sharedInstance.saveContext()
     }
-
     
-
 }
+
+extension TaskItemsTableViewController : UISearchBarDelegate {
+    
+    func searchBarSearchButtonClicked(_ searchBar: UISearchBar) {
+        DataBase.sharedInstance.searchItems(query: searchBar.text!, parentTask: selectedTask!)
+        tableView.reloadData()
+    }
+    
+    func searchBar(_ searchBar: UISearchBar, textDidChange searchText: String) {
+        
+        if searchBar.text?.count == 0 {
+            DataBase.sharedInstance.loadItemsFromDB(selectedTask: selectedTask!)
+            tableView.reloadData()
+            
+            DispatchQueue.main.async {
+                 searchBar.resignFirstResponder()
+            }
+           
+        }
+    }
+}
+

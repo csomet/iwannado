@@ -129,14 +129,12 @@
 		EC07231B2047092400D119EC /* iwannado */ = {
 			isa = PBXGroup;
 			children = (
-				EC07231C2047092400D119EC /* AppDelegate.swift */,
-				EC7B439D205191260028EBEF /* System.swift */,
-				EC74A0652056D87B005FD36C /* DataBase.swift */,
 				ECF88AB8204F2A8F0084E3CC /* Controller */,
 				ECF88AB7204F2A8A0084E3CC /* View */,
 				ECF88AB6204F2A7E0084E3CC /* Model */,
 				EC9B70242050395500D9E435 /* Supporting Files */,
 				EC0723282047092400D119EC /* Info.plist */,
+				EC07231C2047092400D119EC /* AppDelegate.swift */,
 			);
 			path = iwannado;
 			sourceTree = "<group>";
@@ -153,6 +151,8 @@
 		EC9B70242050395500D9E435 /* Supporting Files */ = {
 			isa = PBXGroup;
 			children = (
+				EC7B439D205191260028EBEF /* System.swift */,
+				EC74A0652056D87B005FD36C /* DataBase.swift */,
 				EC0723232047092400D119EC /* Assets.xcassets */,
 				EC07D7DA2055A7E8006E86E5 /* SSRadioButtonController */,
 				ECBC6236204710C60061CCB5 /* TextFieldEffects */,

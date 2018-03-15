@@ -75,6 +75,30 @@ class DataBase {
         
     }
     
+    
+    /**
+     Search Items in the database in alphabetic order.
+     - parameter request: This is an optional param which contains the tasks fetchrequest by default.
+     - parameter query: This is the text to be searched for.
+     - parameter parentTask: Item's task
+    */
+    func searchItems(with request: NSFetchRequest<Item> = Item.fetchRequest(), query: String, parentTask: Task){
+        
+        let searchQry = NSPredicate(format: "itemName CONTAINS[cd] %@ ", query)
+        let parentTaskQry = NSPredicate(format: "parentTask.name MATCHES %@", parentTask.name!)
+        
+        let compoundPredicate = NSCompoundPredicate(andPredicateWithSubpredicates: [searchQry,parentTaskQry])
+        
+        request.predicate = compoundPredicate
+        request.sortDescriptors = [NSSortDescriptor(key: "itemName", ascending: true)]
+        
+        do {
+            App.items = try context.fetch(request)
+        } catch {
+            print("Error searching in the database: \(error)")
+        }
+    }
+    
     /**
      Create and insert a new Task into the database.
      - parameter name: Task title.
