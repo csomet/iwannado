@@ -32,6 +32,9 @@ class TaskItemsTableViewController: UITableViewController {
             
             DataBase.sharedInstance.insertNewItemInDataBase(name: textFieldItem.text!, parentTask: self.selectedTask!)
             
+            self.selectedTask?.completed = getCompletedProgress()
+            DataBase.sharedInstance.saveContext()
+            
             self.tableView.reloadData()
         }
         
