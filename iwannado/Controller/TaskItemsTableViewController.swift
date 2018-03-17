@@ -27,8 +27,8 @@ class TaskItemsTableViewController: UITableViewController {
         var textFieldItem = UITextField()
         
         let alert = UIAlertController(title: "Add Item", message: "", preferredStyle: .alert)
+        let actionCancel = UIAlertAction(title: "Cancel", style: .cancel, handler: nil)
         let action = UIAlertAction(title: "OK", style: .default) { (action) in
-            
             
             DataBase.sharedInstance.insertNewItemInDataBase(name: textFieldItem.text!, parentTask: self.selectedTask!)
             
@@ -39,6 +39,7 @@ class TaskItemsTableViewController: UITableViewController {
         }
         
         alert.addAction(action)
+        alert.addAction(actionCancel)
         
         alert.addTextField { (textField) in
             
