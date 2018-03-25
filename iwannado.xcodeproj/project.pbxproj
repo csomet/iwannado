@@ -18,6 +18,9 @@
 		EC74A0642056AF09005FD36C /* ItemTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = EC74A0632056AF09005FD36C /* ItemTableViewCell.swift */; };
 		EC74A0662056D87B005FD36C /* DataBase.swift in Sources */ = {isa = PBXBuildFile; fileRef = EC74A0652056D87B005FD36C /* DataBase.swift */; };
 		EC763AA020476CB100E4CAF9 /* TaskCollectionViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = EC763A9F20476CB100E4CAF9 /* TaskCollectionViewCell.swift */; };
+		EC7AD68420683722004C15E7 /* addingitems.gif in Resources */ = {isa = PBXBuildFile; fileRef = EC7AD68320683722004C15E7 /* addingitems.gif */; };
+		EC7AD68620683786004C15E7 /* deletingitems.gif in Resources */ = {isa = PBXBuildFile; fileRef = EC7AD68520683786004C15E7 /* deletingitems.gif */; };
+		EC7AD688206837D8004C15E7 /* addingtask.gif in Resources */ = {isa = PBXBuildFile; fileRef = EC7AD687206837D8004C15E7 /* addingtask.gif */; };
 		EC7B439E205191260028EBEF /* System.swift in Sources */ = {isa = PBXBuildFile; fileRef = EC7B439D205191260028EBEF /* System.swift */; };
 		EC9B702720505C5E00D9E435 /* DataModel.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = EC9B702520505C5E00D9E435 /* DataModel.xcdatamodeld */; };
 		ECB4CDCE20473C6C00E7673A /* Apalu.ttf in Resources */ = {isa = PBXBuildFile; fileRef = ECB4CDCD20473C6C00E7673A /* Apalu.ttf */; };
@@ -53,6 +56,9 @@
 		EC74A0632056AF09005FD36C /* ItemTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ItemTableViewCell.swift; sourceTree = "<group>"; };
 		EC74A0652056D87B005FD36C /* DataBase.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DataBase.swift; sourceTree = "<group>"; };
 		EC763A9F20476CB100E4CAF9 /* TaskCollectionViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TaskCollectionViewCell.swift; sourceTree = "<group>"; };
+		EC7AD68320683722004C15E7 /* addingitems.gif */ = {isa = PBXFileReference; lastKnownFileType = image.gif; path = addingitems.gif; sourceTree = "<group>"; };
+		EC7AD68520683786004C15E7 /* deletingitems.gif */ = {isa = PBXFileReference; lastKnownFileType = image.gif; path = deletingitems.gif; sourceTree = "<group>"; };
+		EC7AD687206837D8004C15E7 /* addingtask.gif */ = {isa = PBXFileReference; lastKnownFileType = image.gif; path = addingtask.gif; sourceTree = "<group>"; };
 		EC7B439D205191260028EBEF /* System.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = System.swift; sourceTree = "<group>"; };
 		EC9B702620505C5E00D9E435 /* DataModel.xcdatamodel */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcdatamodel; path = DataModel.xcdatamodel; sourceTree = "<group>"; };
 		ECB4CDCD20473C6C00E7673A /* Apalu.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = Apalu.ttf; sourceTree = "<group>"; };
@@ -129,6 +135,7 @@
 		EC07231B2047092400D119EC /* iwannado */ = {
 			isa = PBXGroup;
 			children = (
+				EC7AD682206828EA004C15E7 /* Demo */,
 				ECF88AB8204F2A8F0084E3CC /* Controller */,
 				ECF88AB7204F2A8A0084E3CC /* View */,
 				ECF88AB6204F2A7E0084E3CC /* Model */,
@@ -146,6 +153,16 @@
 				EC07D7DC2055A7E8006E86E5 /* SSRadioButton.swift */,
 			);
 			path = SSRadioButtonController;
+			sourceTree = "<group>";
+		};
+		EC7AD682206828EA004C15E7 /* Demo */ = {
+			isa = PBXGroup;
+			children = (
+				EC7AD687206837D8004C15E7 /* addingtask.gif */,
+				EC7AD68320683722004C15E7 /* addingitems.gif */,
+				EC7AD68520683786004C15E7 /* deletingitems.gif */,
+			);
+			path = Demo;
 			sourceTree = "<group>";
 		};
 		EC9B70242050395500D9E435 /* Supporting Files */ = {
@@ -271,10 +288,13 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				EC7AD68420683722004C15E7 /* addingitems.gif in Resources */,
 				ECBC624D204710C60061CCB5 /* Info.plist in Resources */,
 				ECB4CDCE20473C6C00E7673A /* Apalu.ttf in Resources */,
 				EC0723272047092400D119EC /* LaunchScreen.storyboard in Resources */,
+				EC7AD688206837D8004C15E7 /* addingtask.gif in Resources */,
 				EC0723242047092400D119EC /* Assets.xcassets in Resources */,
+				EC7AD68620683786004C15E7 /* deletingitems.gif in Resources */,
 				EC0723222047092400D119EC /* Main.storyboard in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
