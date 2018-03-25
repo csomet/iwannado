@@ -5,9 +5,9 @@ non-commercial purpose.
 
 *App demo*
 
-<img src="/Demo/addingtask.gif?raw=true">
-<img src="/Demo/addingitems.gif?raw=true">
-<img src="/Demo/deletingitems.gif?raw=true">
+<img src="/iwannado/Demo/addingtask.gif?raw=true">
+<img src="/iwannado/Demo/addingitems.gif?raw=true">
+<img src="/iwannado/Demo/deletingitems.gif?raw=true">
 
 ## 📝Specs 
 Swift 4.0 Xcode 9.2
@@ -21,8 +21,8 @@ Swift 4.0 Xcode 9.2
 
 iWannado uses a few cocoapods to work:
 
-- [Cocoapods GTProgressBar]
-- [Cocoapods TransitionButton]
+- [Cocoapods GTProgressBar](https://github.com/gregttn/GTProgressBar/blob/master/README.md)
+- [Cocoapods TransitionButton](https://github.com/AladinWay/TransitionButton/blob/master/README.md)
 
 
 ### 👤Author
