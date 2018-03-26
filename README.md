@@ -10,7 +10,7 @@ non-commercial purpose.
 <img src="/iwannado/Demo/deletingitems.gif?raw=true">
 
 ## 📝Specs 
-Swift 4.0 Xcode 9.2
+Swift 4.0 Xcode 9.2. Persistence using CoreData by Apple.
 
 ## 👉🏻TODO:
 - Improve design (App icon and UI)
