@@ -15,6 +15,7 @@ Swift 4.0 Xcode 9.2. Persistence using CoreData by Apple.
 ## 👉🏻TODO:
 - Improve design (App icon and UI)
 - Change CoreData to REALM or similar
+- Add constraints
 
 
 ### 📦Pods
